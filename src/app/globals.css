@@ -2,32 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--font-roboto-slab);
+}
+
+h1,
+h2,
+h3,
+span {
+  font-family: var(--font-fira-code);
+}
+
+.border-3 {
+  border-width: 3px;
+}
+
+.border-5 {
+  border-width: 5px;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .bg-gradient-br-orange {
+    @apply bg-gradient-to-br from-orange to-black;
+  }
+
+  .bg-gradient-br-green {
+    @apply bg-gradient-to-br from-light-green to-dark-green;
+  }
+
+  .bg-gradient-b-green {
+    @apply bg-gradient-to-b from-light-green to-dark-green;
+  }
+}
+
+@layer components {
+  .buttonDiamond {
+    @apply h-10 w-10 z-10 border-3 rounded rotate-45;
+  }
+
+  .titleDiamond {
+    @apply before:relative before:h-5 before:w-5 before:left-2 before:bottom-2 before:border-2 before:rounded-sm before:rotate-45 before:border-orange before:bg-gradient-br-orange;
+  }
+
+  .imageDiamond {
+    @apply h-5 w-5 z-10 border-2 rounded-sm rotate-45 border-orange bg-gradient-br-orange;
   }
 }
