@@ -7,7 +7,7 @@ type MediaProps = {
 
 export const SocialMediaButton = ({ src, alt }: MediaProps) => {
   return (
-    <div className="w-10 h-10 border-3 border-light-green bg-gradient-br-green rounded-[3px] p-[6px] cursor-pointer shadow-[6px_-6px_0_rgba(0,0,0,.3),12px_-12px_0_rgba(0,0,0,.3)] rotate-45 flex justify-center items-center">
+    <div className="w-10 h-10 border-3 border-light-green bg-gradient-br-green rounded-[3px] p-[6px] cursor-pointer shadow-[8px_-8px_0_rgba(0,0,0,.3),16px_-16px_0_rgba(0,0,0,.3)] rotate-45 flex justify-center items-center">
       <Image
         height={30}
         width={30}
