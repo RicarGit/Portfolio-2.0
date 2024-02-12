@@ -9,14 +9,12 @@
 }
 
 body {
-  font-family: var(--font-roboto-slab);
+  font-family: var(--font-fira-code);
 }
 
 h1,
-h2,
-h3,
-span {
-  font-family: var(--font-fira-code);
+p {
+  font-family: var(--font-archivo);
 }
 
 .border-3 {
@@ -38,6 +36,10 @@ span {
 
   .bg-gradient-b-green {
     @apply bg-gradient-to-b from-light-green to-dark-green;
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 1.5px #3CABA2;
   }
 
   .big-diamond-shadows {
