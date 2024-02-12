@@ -29,7 +29,7 @@ const config: Config = {
           lg: '720px',
           xl: '960px'
         }
-      }
+      },
     },
   },
   plugins: [],
