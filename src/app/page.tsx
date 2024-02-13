@@ -1,6 +1,7 @@
 import { BigOrangeDiamond } from "@/components/BigOrangeDiamond/BigOrangeDiamond"
 import { Button } from "@/components/Button/Button"
 import { PageDetail } from "@/components/PageDetail/PageDetail"
+import { SideMenu } from "@/components/SideMenu/SideMenu"
 import { SocialMediaButton } from "@/components/SocialMediaButton/SocialMediaButton"
 
 export default function Home() {
@@ -10,6 +11,8 @@ export default function Home() {
       <PageDetail color='green' position="top-right" rotate />
       <PageDetail color='green' position="bottom-left" />
       <PageDetail color='blue' position="bottom-right" />
+
+      <SideMenu />
 
       <main className='container relative mx-auto h-screen flex justify-end items-center px-5 desktop:px-0'>
 
