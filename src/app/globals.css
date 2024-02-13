@@ -13,8 +13,13 @@ body {
 }
 
 h1,
-p {
+p,
+a {
   font-family: var(--font-archivo);
+}
+
+a {
+  cursor: pointer;
 }
 
 .border-3 {
