@@ -59,8 +59,8 @@ a {
     @apply h-10 w-10 z-10 border-3 rounded rotate-45;
   }
 
-  .titleDiamond {
-    @apply before:relative before:h-5 before:w-5 before:left-2 before:bottom-2 before:border-2 before:rounded-sm before:rotate-45 before:border-orange before:bg-gradient-br-orange;
+  .subTitleDiamond {
+    @apply before:absolute before:-z-10 before:h-5 before:w-5 before:-left-2 before:top-0 before:border-2 before:rounded-sm before:rotate-45 before:border-orange before:bg-gradient-br-orange;
   }
 
   .imageDiamond {
