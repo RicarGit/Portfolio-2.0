@@ -10,7 +10,7 @@ export const SideMenu = () => {
       <nav className="text-white">
         <ul className="">
           <ProjectThumbnail thumbName="dogsSocialMedia">Dogs Social Media</ProjectThumbnail>
-          <ProjectThumbnail thumbName="wildbeast">Wildbeast</ProjectThumbnail>
+          <ProjectThumbnail active thumbName="wildbeast">Wildbeast</ProjectThumbnail>
           <ProjectThumbnail thumbName="galeriaFotos">Galeria de fotos</ProjectThumbnail>
           <ProjectThumbnail thumbName="devMemory">DevMemory</ProjectThumbnail>
           <ProjectThumbnail thumbName="calculadoraIMC">Calculadora de IMC</ProjectThumbnail>

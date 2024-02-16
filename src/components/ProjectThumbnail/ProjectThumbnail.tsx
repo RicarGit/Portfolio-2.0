@@ -3,7 +3,7 @@ import { ReactNode } from "react"
 
 type ProjectThumbnailProps = {
   children: ReactNode
-  hidden?: boolean
+  active?: boolean
   thumbName: 'dogsSocialMedia' | 'wildbeast' | 'galeriaFotos' | 'devMemory' | 'calculadoraIMC' | 'albumFotos'
 }
 
@@ -23,11 +23,11 @@ const thumbnails = {
   albumFotos
 }
 
-export const ProjectThumbnail = ({ thumbName, hidden, children }: ProjectThumbnailProps) => {
+export const ProjectThumbnail = ({ thumbName, active, children }: ProjectThumbnailProps) => {
   return (
     <li className="relative w-[230px] h-20 flex justify-center items-center border-t-[3px] last:border-b-[3px] border-white box-content">
-      <div className={`absolute z-10 w-[230px] h-20 bg-[rgba(0,0,0,.5)] ${hidden && 'hidden'}`}></div>
-      <h3 className="text-lg font-medium relative z-20">{children}</h3>
+      <div className={`absolute z-10 w-[230px] h-20 bg-[rgba(0,0,0,.5)] ${active && 'hidden'}`}></div>
+      <h3 className={`text-lg font-medium relative z-20 ${active && 'hidden'}`}>{children}</h3>
       <Image src={thumbnails[thumbName]} fill alt="" />
     </li>
   )
