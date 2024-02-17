@@ -4,7 +4,7 @@ import { SubTitle } from "../SubTitle/SubTitle"
 
 export const SideMenu = () => {
   return (
-    <aside className="fixed left-0 z-20 flex flex-col h-screen bg-dark-green border-r-[3px] border-y-[3px] rounded-r bg-[radial-gradient(circle_at_0_25%,_var(--tw-gradient-stops))] from-green via-dark-green via-70% to-dark-green">
+    <aside className="fixed left-0 z-30 flex flex-col h-screen bg-dark-green border-r-[3px] border-y-[3px] rounded-r bg-[radial-gradient(circle_at_0_25%,_var(--tw-gradient-stops))] from-green via-dark-green via-70% to-dark-green">
       <SubTitle>Projetos</SubTitle>
 
       <nav className="text-white">
