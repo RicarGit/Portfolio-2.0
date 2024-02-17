@@ -1,4 +1,4 @@
-import { BigOrangeDiamond } from "@/components/BigOrangeDiamond/BigOrangeDiamond"
+import { ProfileDiamond } from "@/components/ProfileDiamond/ProfileDiamond"
 import { Button } from "@/components/Button/Button"
 import { PageDetail } from "@/components/PageDetail/PageDetail"
 import { SideMenu } from "@/components/SideMenu/SideMenu"
@@ -36,7 +36,7 @@ export default function Home() {
             </div>
           </div>
 
-          <BigOrangeDiamond />
+          <ProfileDiamond />
         </div>
 
       </main>
