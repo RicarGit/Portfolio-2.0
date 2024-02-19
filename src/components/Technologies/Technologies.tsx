@@ -9,7 +9,7 @@ type TechnologiesProps = {
 
 export const Technologies = ({ techs, libs }: TechnologiesProps) => {
   return (
-    <div className="text-white uppercase font-medium text-lg">
+    <div className="ml-4 text-white uppercase font-medium text-lg">
       {techs.length > 0 &&
         <div className="flex relative gap-2">
           {techs.map(tech =>
@@ -22,7 +22,7 @@ export const Technologies = ({ techs, libs }: TechnologiesProps) => {
       }
 
       {libs.length > 0 &&
-        <div className="flex gap-2 relative left-[64px] -top-[26px]">
+        <div className="flex gap-2 relative left-[64px] -top-7">
           {libs.map(lib =>
             <div key={lib} className="flex relative justify-center items-center">
               <p className="absolute px-2 text-center">{lib}</p>
