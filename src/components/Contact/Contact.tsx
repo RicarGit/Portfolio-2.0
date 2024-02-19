@@ -7,9 +7,9 @@ type ContactProps = {
 
 export const Contact = ({ contact, children }: ContactProps) => {
   return (
-    <div className="text-light-green mb-4 ml-3">
+    <div className="text-light-green mb-4 ml-4">
       <p>{children}</p>
-      <a>{contact}</a>
+      <a className="underline">{contact}</a>
     </div>
   )
 }
