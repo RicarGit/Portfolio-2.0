@@ -6,6 +6,6 @@ type SubTitleProps = {
 
 export const SubTitle = ({ children }: SubTitleProps) => {
   return (
-    <h2 className="text-white text-3xl font-semibold mt-[60px] mb-5 ml-3 relative subTitleDiamond">{children}</h2>
+    <h2 className="text-white text-3xl font-semibold mt-10 ml-4 mb-5 relative subTitleDiamond">{children}</h2>
   )
 }
