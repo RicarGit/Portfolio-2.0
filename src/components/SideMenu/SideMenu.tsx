@@ -1,5 +1,5 @@
 import { Contact } from "../Contact/Contact"
-import { ProjectThumbnail } from "../ProjectThumbnail/ProjectThumbnail"
+import { ProjectsList } from "../ProjectsList/ProjectsList"
 import { SubTitle } from "../SubTitle/SubTitle"
 
 export const SideMenu = () => {
@@ -8,14 +8,7 @@ export const SideMenu = () => {
       <SubTitle>Projetos</SubTitle>
 
       <nav className="text-white">
-        <ul className="">
-          <ProjectThumbnail thumbName="dogsSocialMedia">Dogs Social Media</ProjectThumbnail>
-          <ProjectThumbnail active thumbName="wildbeast">Wildbeast</ProjectThumbnail>
-          <ProjectThumbnail thumbName="galeriaFotos">Galeria de fotos</ProjectThumbnail>
-          <ProjectThumbnail thumbName="devMemory">DevMemory</ProjectThumbnail>
-          <ProjectThumbnail thumbName="calculadoraIMC">Calculadora de IMC</ProjectThumbnail>
-          <ProjectThumbnail thumbName="albumFotos">Álbum de fotos</ProjectThumbnail>
-        </ul>
+        <ProjectsList />
       </nav>
 
       <footer className="h-full">
