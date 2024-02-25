@@ -15,7 +15,7 @@ export const SideMenu = () => {
         <SubTitle>Contato</SubTitle>
 
         <Contact contact="ricardoagava@gmail.com">Email:</Contact>
-        <Contact contact="(11) 97328-3296">Whatsapp</Contact>
+        <Contact contact="(11) 97328-3296">Whatsapp:</Contact>
 
         <p className="text-dark-blue text-xs tracking-wide text-center relative bottom-[-20%]">Todos os direitos reservados.</p>
       </footer>
