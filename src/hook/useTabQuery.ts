@@ -8,8 +8,8 @@ export const useTabQuery = () => {
   const tab = searchParams.get('tab')
   const current = new URLSearchParams(Array.from(searchParams.entries()))
 
-  const setTab = (thumbName: string) => {
-    current.set("tab", thumbName)
+  const setTab = (projectIndex: string) => {
+    current.set("tab", projectIndex)
 
     const search = current.toString()
     router.push(`${pathname}?${search}`)
