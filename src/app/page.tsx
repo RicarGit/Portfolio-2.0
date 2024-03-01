@@ -19,10 +19,10 @@ export default function Home() {
       <main className='container relative mx-auto h-screen flex justify-end items-center px-5 desktop:px-0'>
 
         <div className="absolute top-[10%] right-0 flex gap-12 justify-end">
-          <SocialMediaButton src='/github.svg' alt='' />
-          <SocialMediaButton src='/linkedin.svg' alt='' />
-          <SocialMediaButton src='/discord.svg' alt='' />
-          <SocialMediaButton src='/telegram.svg' alt='' />
+          <SocialMediaButton src='/github.svg' link="/" alt='' />
+          <SocialMediaButton src='/linkedin.svg' link="/" alt='' />
+          <SocialMediaButton src='/discord.svg' link="/" alt='' />
+          <SocialMediaButton src='/telegram.svg' link="/" alt='' />
         </div>
 
         <div className="flex items-center">
