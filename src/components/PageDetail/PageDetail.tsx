@@ -1,6 +1,6 @@
 import Image from "next/image"
-import pageDetailGreen from "/public/PageDetailGreen.svg"
-import pageDetailBlue from "/public/PageDetailBlue.svg"
+import pageDetailGreen from "/public/pageDetailGreen.svg"
+import pageDetailBlue from "/public/pageDetailBlue.svg"
 
 type PageDetail = {
   color: 'green' | 'blue'
@@ -20,7 +20,7 @@ const svgPositions = {
   ['bottom-left']: 'bottom-0 left-0'
 }
 
-export const PageDetail = ({ color = 'blue', rotate, position }: PageDetail) => {
+export const PageDetail = ({ color, rotate, position }: PageDetail) => {
   return (
     <div className={`absolute m-12 ${color === 'blue' ? 'w-[350px] h-44' : 'w-44 h-[350px]'} ${svgPositions[position]} ${rotate ?? 'rotate-180'}`}>
       <Image src={svgColors[color]} fill alt="" className="drop-shadow-[8px_8px_1px_rgba(0,0,0,.3)]" />
