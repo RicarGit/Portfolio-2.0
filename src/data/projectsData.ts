@@ -18,6 +18,8 @@ export const projetsData = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at augue non tellus pharetra laoreet. Sed venenatis aliquet scelerisque. Integer aliquet cursus est, ac placerat neque tempor eleifend. Nulla non facilisis neque, at venenatis turpis, Nulla non facilisis neque, at venenatis turpis.',
     techs: ['html', 'css', 'react'],
     libs: [''],
+    codeLink: '/',
+    deployLink: '/',
     thumbImage: dogsSocialMediaThumb,
     projectImage: dogsSocialMedia
   },
@@ -26,6 +28,8 @@ export const projetsData = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at augue non tellus pharetra laoreet. Sed venenatis aliquet scelerisque. Integer aliquet cursus est, ac placerat neque tempor eleifend. Nulla non facilisis neque, at venenatis turpis, Nulla non facilisis neque, at venenatis turpis.',
     techs: [''],
     libs: [''],
+    codeLink: '/',
+    deployLink: '/',
     thumbImage: wildbeastThumb,
     projectImage: wildbeast
   },
@@ -34,6 +38,8 @@ export const projetsData = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at augue non tellus pharetra laoreet. Sed venenatis aliquet scelerisque. Integer aliquet cursus est, ac placerat neque tempor eleifend. Nulla non facilisis neque, at venenatis turpis, Nulla non facilisis neque, at venenatis turpis.',
     techs: [''],
     libs: [''],
+    codeLink: '/',
+    deployLink: '/',
     thumbImage: galeriaFotosThumb,
     projectImage: galeriaFotos
   },
@@ -42,6 +48,8 @@ export const projetsData = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at augue non tellus pharetra laoreet. Sed venenatis aliquet scelerisque. Integer aliquet cursus est, ac placerat neque tempor eleifend. Nulla non facilisis neque, at venenatis turpis, Nulla non facilisis neque, at venenatis turpis.',
     techs: [''],
     libs: [''],
+    codeLink: '/',
+    deployLink: '/',
     thumbImage: devMemoryThumb,
     projectImage: devMemory
   },
@@ -50,6 +58,8 @@ export const projetsData = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at augue non tellus pharetra laoreet. Sed venenatis aliquet scelerisque. Integer aliquet cursus est, ac placerat neque tempor eleifend. Nulla non facilisis neque, at venenatis turpis, Nulla non facilisis neque, at venenatis turpis.',
     techs: [''],
     libs: [''],
+    codeLink: '/',
+    deployLink: '/',
     thumbImage: calculadoraIMCThumb,
     projectImage: calculadoraIMC
   },
@@ -58,6 +68,8 @@ export const projetsData = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at augue non tellus pharetra laoreet. Sed venenatis aliquet scelerisque. Integer aliquet cursus est, ac placerat neque tempor eleifend. Nulla non facilisis neque, at venenatis turpis, Nulla non facilisis neque, at venenatis turpis.',
     techs: [''],
     libs: [''],
+    codeLink: '/',
+    deployLink: '/',
     thumbImage: albumFotosThumb,
     projectImage: albumFotos
   },
