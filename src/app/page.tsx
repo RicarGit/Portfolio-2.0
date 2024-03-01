@@ -1,11 +1,17 @@
+"use client"
+
 import { ProfileDiamond } from "@/components/ProfileDiamond/ProfileDiamond"
 import { Button } from "@/components/Button/Button"
 import { SideMenuModal } from "@/components/SideMenuModal/SideMenuModal"
 import { PageDetail } from "@/components/PageDetail/PageDetail"
 import { SideMenu } from "@/components/SideMenu/SideMenu"
 import { SocialMediaButton } from "@/components/SocialMediaButton/SocialMediaButton"
+import { useState } from "react"
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false)
+  const [showAboutMe, setShowAboutMe] = useState(false)
+
   return (
     <>
       <PageDetail color='blue' position="top-left" rotate />
@@ -13,8 +19,12 @@ export default function Home() {
       <PageDetail color='green' position="bottom-left" />
       <PageDetail color='blue' position="bottom-right" />
 
-      <SideMenu />
-      <SideMenuModal />
+      {isOpen &&
+        <>
+          <SideMenu />
+          <SideMenuModal />
+        </>
+      }
 
       <main className='container relative mx-auto h-screen flex justify-end items-center px-5 desktop:px-0'>
 
@@ -33,8 +43,8 @@ export default function Home() {
               <span className="desktop:text-7xl text-5xl tracking-wide font-black text-dark-green text-stroke relative z-10 bg-clip-text text-transparent bg-gradient-to-t from-green to-dark-green via-50% via-dark-green">Desenvolvedor Front-End</span>.</h1>
 
             <div className="flex gap-12 mt-24">
-              <Button color="green">menu</Button>
-              <Button color="orange">sobre</Button>
+              <Button callbackState={setIsOpen} color="green">menu</Button>
+              <Button callbackState={setShowAboutMe} color="orange">sobre</Button>
             </div>
           </div>
 
