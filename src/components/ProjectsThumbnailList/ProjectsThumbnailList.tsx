@@ -1,7 +1,7 @@
 import { ProjectThumbnail } from "../ProjectThumbnail/ProjectThumbnail"
 import { projetsData } from "@/data/projectsData"
 
-export const ProjectsList = () => {
+export const ProjectsThumbnailList = () => {
   return (
     <ul className="cursor-pointer">
       {projetsData &&
