@@ -23,7 +23,7 @@ const svgPositions = {
 export const PageDetail = ({ color, rotate, position }: PageDetail) => {
   return (
     <div className={`absolute m-12 ${color === 'blue' ? 'w-[350px] h-44' : 'w-44 h-[350px]'} ${svgPositions[position]} ${rotate ?? 'rotate-180'}`}>
-      <Image src={svgColors[color]} fill alt="" className="drop-shadow-[8px_8px_1px_rgba(0,0,0,.3)]" />
+      <Image src={svgColors[color]} fill priority alt="" className="drop-shadow-[8px_8px_1px_rgba(0,0,0,.3)]" />
     </div>
   )
 }

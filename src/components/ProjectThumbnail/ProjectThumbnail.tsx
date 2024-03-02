@@ -33,7 +33,7 @@ export const ProjectThumbnail = ({ thumbImage, projectIndex, children }: Project
       <div className={`absolute z-10 w-[230px] h-20 bg-[rgba(0,0,0,.6)] hover:bg-[rgba(0,0,0,.45)] ${isActive && 'hidden'}`}></div>
       <div className={`${isActive && "h-10 w-10 absolute border-b-[3px] border-l-[3px] rounded-sm rotate-45 bg-dark-green -right-[91px]"}`}></div>
       <h3 className={`text-lg font-medium relative z-20 ${isActive && 'hidden'}`}>{children}</h3>
-      <Image src={thumbImage} fill alt="" />
+      <Image src={thumbImage} fill priority alt="" />
     </li>
   )
 }
