@@ -23,8 +23,8 @@ export const SideMenu = ({ setIsOpen }: SideMenuProps) => {
       <footer className="h-full relative">
         <SubTitle>Contato</SubTitle>
 
-        <Contact contact="ricardoagava@gmail.com">Email:</Contact>
-        <Contact contact="(11) 97328-3296">Whatsapp:</Contact>
+        <Contact contactType="email" contact="ricardoagava@gmail.com" >Email</Contact>
+        <Contact contactType="whatsapp" contact="(11) 97328-3296" >Whatsapp</Contact>
 
         <p className="text-dark-blue text-xs tracking-wide absolute bottom-4 ml-4">Todos os direitos reservados.</p>
       </footer>
