@@ -1,5 +1,7 @@
 "use client"
 
+import { MouseEvent, useRef } from "react"
+
 import Image from "next/image"
 import separator from "/public/separator.svg"
 
@@ -13,13 +15,20 @@ import { projetsData } from "@/data/projectsData"
 import { useTabQuery } from "@/hook/useTabQuery"
 
 export const SideMenuModal = () => {
-  const { tab } = useTabQuery()
+  const { tab, removeTab } = useTabQuery()
   const project = projetsData[Number(tab)]
+  const modalBgRef = useRef<HTMLDivElement>(null)
 
   if (!tab) return
 
+  const closeModal = (event: MouseEvent) => {
+    if (event.target === modalBgRef.current) {
+      removeTab()
+    }
+  }
+
   return (
-    <div className="absolute w-screen h-screen flex items-center z-20 backdrop-blur-sm">
+    <div onClick={closeModal} ref={modalBgRef} className="absolute w-screen h-screen flex items-center z-20 backdrop-blur-sm">
       <div className="absolute z-30 w-[70%] min-h-[80%] left-[300px] grid grid-cols-2 grid-rows-2 px-5 border-3 rounded bg-[radial-gradient(circle_at_80%_20%,_var(--tw-gradient-stops))] from-green via-dark-green via-50% to-dark-green">
 
         <ModalDetail color="green" position="top-right" />
