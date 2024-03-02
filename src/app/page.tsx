@@ -19,7 +19,7 @@ export default function Home() {
 
       {isOpen &&
         <>
-          <SideMenu />
+          <SideMenu setIsOpen={setIsOpen} />
           <SideMenuModal />
         </>
       }
