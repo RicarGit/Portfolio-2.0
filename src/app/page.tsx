@@ -1,12 +1,14 @@
 "use client"
 
+import { useState } from "react"
+
 import { ProfileDiamond } from "@/components/ProfileDiamond/ProfileDiamond"
 import { Button } from "@/components/Button/Button"
 import { SideMenuModal } from "@/components/SideMenuModal/SideMenuModal"
 import { PageDetail } from "@/components/PageDetail/PageDetail"
 import { SideMenu } from "@/components/SideMenu/SideMenu"
 import { SocialMediaButton } from "@/components/SocialMediaButton/SocialMediaButton"
-import { useState } from "react"
+import { SocialMediaButtons } from "@/components/SocialMediaButtons/SocialMediaButtons"
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
@@ -28,12 +30,7 @@ export default function Home() {
 
       <main className='container relative mx-auto h-screen flex justify-end items-center px-5 desktop:px-0'>
 
-        <div className="absolute top-[10%] right-0 flex gap-12 justify-end">
-          <SocialMediaButton src='/github.svg' link="/" alt='' />
-          <SocialMediaButton src='/linkedin.svg' link="/" alt='' />
-          <SocialMediaButton src='/discord.svg' link="/" alt='' />
-          <SocialMediaButton src='/telegram.svg' link="/" alt='' />
-        </div>
+        <SocialMediaButtons />
 
         <div className="flex items-center">
 
