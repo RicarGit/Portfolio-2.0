@@ -67,7 +67,7 @@ export const projetsData = [
     projectName: 'Álbum de Fotos',
     description: `Projeto feito com o objetivo de criar 3 páginas de um álbum de fotos consumindo uma fake api, uma página listando todos os álguns, uma página contendo todas as fotos do álbum selcionado, e por último a página contendo a foto selecionada.
     
-Minhas melhorias: estilo visual do projeto, botão voltar, botão para voltar ao topo da página, paginação simples.`,
+Minhas melhorias: estilo visual do projeto, botão voltar, botão para voltar ao topo da página, paginação simples e responsividade.`,
     techs: ['html', 'css', 'react', 'ts'],
     libs: ['styled comp.', 'axios', 'router dom'],
     codeLink: 'https://github.com/RicarGit/React-JSONPlaceholder-Albums-Project',
