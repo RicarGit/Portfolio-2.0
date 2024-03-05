@@ -23,7 +23,7 @@ export const Button = ({ color, link, callbackState, children }: ButtonProps) =>
     <button onClick={handleClick}>
       <a href={link} target="_blank" className={`relative w-36 h-10 py-2 ${isOrange ? 'mr-8' : 'ml-8'} flex items-center justify-center`}>
         <div className={`absolute ${isOrange ? 'right-[-25px]' : 'left-[-25px]'} buttonDiamond ${buttonColors[color]}`}></div>
-        <span className={`z-10 ${isOrange ? 'text-orange' : 'text-light-green'} text-sm font-semibold uppercase tracking-widest`}>{children}</span>
+        <span className={`z-10 ${isOrange ? 'text-orange' : 'text-light-green'} text-sm font-bold uppercase tracking-widest`}>{children}</span>
         <Image src={buttonSvg} fill alt="bg-button" className={`${isOrange && 'rotate-180'}`} />
       </a>
     </button>
