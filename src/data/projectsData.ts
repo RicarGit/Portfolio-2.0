@@ -45,11 +45,13 @@ export const projetsData = [
   },
   {
     projectName: 'DevMemory',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at augue non tellus pharetra laoreet. Sed venenatis aliquet scelerisque. Integer aliquet cursus est, ac placerat neque tempor eleifend. Nulla non facilisis neque, at venenatis turpis, Nulla non facilisis neque, at venenatis turpis.',
-    techs: [''],
-    libs: [''],
-    codeLink: '/',
-    deployLink: '/',
+    description: `Um jogo da memória feito para praticar um pouco de lógica, estados do react e eventos de click.
+    
+Minhas melhorias: Todas as animações, adição de mais 8 cards, imagens da frente dos cards com tema de comida, component de recorde que armazena o melhor tempo e menores movimentos do jogador no navegador do usuário, tema dark e responsividade.`,
+    techs: ['html', 'css', 'react', 'ts'],
+    libs: ['styled comp.'],
+    codeLink: 'https://github.com/RicarGit/React-Memory-Game',
+    deployLink: 'https://project-react-memory-game.netlify.app',
     thumbImage: devMemoryThumb,
     projectImage: devMemory
   },
