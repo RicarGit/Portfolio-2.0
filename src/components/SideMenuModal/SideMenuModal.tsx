@@ -40,8 +40,8 @@ export const SideMenuModal = () => {
           <p className="text-light-green max-w-[600px] pl-4 whitespace-break-spaces">{project.description}</p>
 
           <div className="flex gap-12 mt-14 ml-5">
-            <Button link={project.codeLink} color="green">code</Button>
-            <Button link={project.deployLink} color="orange">deploy</Button>
+            <Button link={project.codeLink} color="green">código</Button>
+            <Button link={project.deployLink} color="orange">visitar</Button>
           </div>
 
           <Image src={separator} width={500} height={6} alt="" className="absolute bottom-[-6px]" />
