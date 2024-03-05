@@ -37,7 +37,7 @@ export const SideMenuModal = () => {
         <div className="relative">
           <SubTitle>{project.projectName}</SubTitle>
 
-          <p className="text-light-green max-w-[600px] pl-4">{project.description}</p>
+          <p className="text-light-green max-w-[600px] pl-4 whitespace-break-spaces">{project.description}</p>
 
           <div className="flex gap-12 mt-14 ml-5">
             <Button link={project.codeLink} color="green">code</Button>
