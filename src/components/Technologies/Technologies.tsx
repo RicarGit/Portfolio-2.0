@@ -25,8 +25,8 @@ export const Technologies = ({ techs, libs }: TechnologiesProps) => {
         <div className="flex gap-2 relative left-[64px] -top-7">
           {libs.map(lib =>
             <div key={lib} className="flex relative justify-center items-center">
-              <p className="absolute px-2 text-center">{lib}</p>
-              <Image src={hexagonOrange} width={120} height={120} alt="" />
+              <p className="absolute px-2 text-center">{lib || 'sem libs'}</p>
+              <Image src={hexagonOrange} width={120} height={120} alt={lib} />
             </div>
           )}
         </div>
