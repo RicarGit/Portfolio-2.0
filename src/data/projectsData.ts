@@ -35,11 +35,13 @@ export const projetsData = [
   },
   {
     projectName: 'Galeria de Fotos',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at augue non tellus pharetra laoreet. Sed venenatis aliquet scelerisque. Integer aliquet cursus est, ac placerat neque tempor eleifend. Nulla non facilisis neque, at venenatis turpis, Nulla non facilisis neque, at venenatis turpis.',
-    techs: [''],
-    libs: [''],
-    codeLink: '/',
-    deployLink: '/',
+    description: `Projeto feito com intuito de aprender a usar o banco de dados do firebase, utilizando o banco para armazenar e buscar imagens.
+    
+Minhas melhorias: Design do input e botões, funções de baixar e deletar imagem, filtro no nome, tamanho e extensões das imagens usando Regex, exibição de sucesso e possiveis erros na hora de fazer upload da imagem e responsividade.`,
+    techs: ['html', 'css', 'react', 'ts'],
+    libs: ['styled comp.', 'jest', 'firebase'],
+    codeLink: 'https://github.com/RicarGit/Gallery',
+    deployLink: 'https://galeria-de-fotos-react.netlify.app',
     thumbImage: galeriaFotosThumb,
     projectImage: galeriaFotos
   },
