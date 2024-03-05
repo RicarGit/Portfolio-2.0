@@ -15,11 +15,13 @@ import albumFotos from "/public/albumFotos.png"
 export const projetsData = [
   {
     projectName: 'Dogs Social Media',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at augue non tellus pharetra laoreet. Sed venenatis aliquet scelerisque. Integer aliquet cursus est, ac placerat neque tempor eleifend. Nulla non facilisis neque, at venenatis turpis, Nulla non facilisis neque, at venenatis turpis.',
-    techs: ['html', 'css', 'react'],
-    libs: [''],
-    codeLink: '/',
-    deployLink: '/',
+    description: `Uma rede social para cachorros com sistema de criação de conta, login, senha perdida, posts, curtidas, views, comentários e gráfico de estatisticas.
+    
+Minhas melhorias: Fiz o projeto todo em typescript, adicionei e aprendi a usar libs que nunca tinha usado, react-hook-form para controlar e validar os formulários, zod para validação dos formulários, zustand para criação de contexto global.`,
+    techs: ['html', 'css', 'react', 'ts'],
+    libs: ['victory', 'zod', 'zustand', 'hook form'],
+    codeLink: 'https://github.com/RicarGit/Dogs-Social-Media',
+    deployLink: 'https://dogs-sunday.netlify.app',
     thumbImage: dogsSocialMediaThumb,
     projectImage: dogsSocialMedia
   },
@@ -49,7 +51,7 @@ Minhas melhorias: Design do input e botões, funções de baixar e deletar image
     projectName: 'DevMemory',
     description: `Um jogo da memória feito para praticar um pouco de lógica, estados do react e eventos de click.
     
-Minhas melhorias: Todas as animações, adição de mais 8 cards, imagens da frente dos cards com tema de comida, component de recorde que armazena o melhor tempo e menores movimentos do jogador no navegador do usuário, tema dark e responsividade.`,
+Minhas melhorias: Todas as animações, adição de mais 8 cards, novas imagens dos cards, component de recorde que armazena o melhor tempo e menores movimentos do jogador no navegador do usuário, tema dark e responsividade.`,
     techs: ['html', 'css', 'react', 'ts'],
     libs: ['styled comp.'],
     codeLink: 'https://github.com/RicarGit/React-Memory-Game',
