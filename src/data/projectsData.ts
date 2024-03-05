@@ -25,11 +25,11 @@ export const projetsData = [
   },
   {
     projectName: 'Wildbeast',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at augue non tellus pharetra laoreet. Sed venenatis aliquet scelerisque. Integer aliquet cursus est, ac placerat neque tempor eleifend. Nulla non facilisis neque, at venenatis turpis, Nulla non facilisis neque, at venenatis turpis.',
-    techs: [''],
+    description: 'Projeto feito com intuido de aprender sobre css grid layout, aprender sobre posicionamento, comportamento, alinhamento e responsividade, criando layouts usando flex-box em conjunto com grid para conseguir os melhores resultados.',
+    techs: ['html', 'css grid'],
     libs: [''],
-    codeLink: '/',
-    deployLink: '/',
+    codeLink: 'https://github.com/RicarGit/Grid-Wildbeast',
+    deployLink: 'https://grid-wildbeasts.netlify.app',
     thumbImage: wildbeastThumb,
     projectImage: wildbeast
   },
