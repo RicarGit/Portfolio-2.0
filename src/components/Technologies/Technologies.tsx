@@ -15,7 +15,7 @@ export const Technologies = ({ techs, libs }: TechnologiesProps) => {
           {techs.map(tech =>
             <div key={tech} className="flex relative justify-center items-center">
               <p className="absolute text-center">{tech}</p>
-              <Image key={tech} src={hexagonGreen} width={120} height={120} alt="" />
+              <Image key={tech} src={hexagonGreen} width={120} height={120} alt={tech} />
             </div>
           )}
         </div>
