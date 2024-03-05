@@ -55,11 +55,13 @@ export const projetsData = [
   },
   {
     projectName: 'Calculadora de IMC',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at augue non tellus pharetra laoreet. Sed venenatis aliquet scelerisque. Integer aliquet cursus est, ac placerat neque tempor eleifend. Nulla non facilisis neque, at venenatis turpis, Nulla non facilisis neque, at venenatis turpis.',
-    techs: [''],
+    description: `Meu primeiro projeto feito em React, uma calculadora que mede seu IMC - índice de massa corporal, calculando os resultados baseados na altura e peso atual da pessoa, podendo retornar 4 possíveis resultados dependendo do valor do IMC.
+    
+Minhas melhorias: mudanças no design do botão voltar, tamanho dos components e conteúdos.`,
+    techs: ['html', 'css modules', 'ts'],
     libs: [''],
-    codeLink: '/',
-    deployLink: '/',
+    codeLink: 'https://github.com/RicarGit/React-Project_Imc_Calculator',
+    deployLink: 'https://react-imc-calculator.netlify.app',
     thumbImage: calculadoraIMCThumb,
     projectImage: calculadoraIMC
   },
