@@ -12,7 +12,7 @@ export const Contact = ({ contactType, contact, children }: ContactProps) => {
       <a className="underline" target="_blank" href={
         contactType === 'email'
           ? `mailto:${contact}`
-          : 'https://wa.me/11973283296'} >
+          : 'https://wa.me/5511973283296'} >
         {contact}
       </a>
     </div>
