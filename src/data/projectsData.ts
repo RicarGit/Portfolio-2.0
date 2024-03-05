@@ -57,8 +57,8 @@ export const projetsData = [
     projectName: 'Calculadora de IMC',
     description: `Meu primeiro projeto feito em React, uma calculadora que mede seu IMC - índice de massa corporal, calculando os resultados baseados na altura e peso atual da pessoa, podendo retornar 4 possíveis resultados dependendo do valor do IMC.
     
-Minhas melhorias: mudanças no design do botão voltar, tamanho dos components e conteúdos.`,
-    techs: ['html', 'css modules', 'ts'],
+Minhas melhorias: Mudanças no design do botão voltar, tamanho dos components e conteúdos.`,
+    techs: ['html', 'css modules', 'react', 'ts'],
     libs: [''],
     codeLink: 'https://github.com/RicarGit/React-Project_Imc_Calculator',
     deployLink: 'https://react-imc-calculator.netlify.app',
@@ -69,7 +69,7 @@ Minhas melhorias: mudanças no design do botão voltar, tamanho dos components e
     projectName: 'Álbum de Fotos',
     description: `Projeto feito com o objetivo de criar 3 páginas de um álbum de fotos consumindo uma fake api, uma página listando todos os álguns, uma página contendo todas as fotos do álbum selcionado, e por último a página contendo a foto selecionada.
     
-Minhas melhorias: estilo visual do projeto, botão voltar, botão para voltar ao topo da página, paginação simples e responsividade.`,
+Minhas melhorias: Estilo visual do projeto, botão voltar, botão para voltar ao topo da página, paginação simples e responsividade.`,
     techs: ['html', 'css', 'react', 'ts'],
     libs: ['styled comp.', 'axios', 'router dom'],
     codeLink: 'https://github.com/RicarGit/React-JSONPlaceholder-Albums-Project',
