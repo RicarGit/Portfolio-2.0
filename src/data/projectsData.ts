@@ -12,7 +12,7 @@ import devMemory from "/public/devMemory.png"
 import calculadoraIMC from "/public/calculadoraIMC.png"
 import albumFotos from "/public/albumFotos.png"
 
-export const projetsData = [
+export const projectsData = [
   {
     projectName: 'Dogs Social Media',
     description: 'Uma rede social para cachorros com sistema de criação de conta, login, senha perdida, posts, curtidas, views, comentários e gráfico de estatisticas.',

@@ -1,11 +1,11 @@
 import { ProjectThumbnail } from "../ProjectThumbnail/ProjectThumbnail"
-import { projetsData } from "@/data/projectsData"
+import { projectsData } from "@/data/projectsData"
 
 export const ProjectsThumbnailList = () => {
   return (
     <ul className="cursor-pointer">
-      {projetsData &&
-        projetsData.map(({ projectName, thumbImage }, index) =>
+      {projectsData &&
+        projectsData.map(({ projectName, thumbImage }, index) =>
           <ProjectThumbnail key={projectName} projectIndex={index.toString()} thumbImage={thumbImage}>
             {projectName}
           </ProjectThumbnail>

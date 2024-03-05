@@ -11,12 +11,12 @@ import { Technologies } from "../Technologies/Technologies"
 import { ProjectDiamond } from "../ProjectDiamond/ProjectDiamond"
 import { ModalDetail } from "../ModalDetail/ModalDetail"
 
-import { projetsData } from "@/data/projectsData"
+import { projectsData } from "@/data/projectsData"
 import { useTabQuery } from "@/hook/useTabQuery"
 
 export const SideMenuModal = () => {
   const { tab, removeTab } = useTabQuery()
-  const project = projetsData[Number(tab)]
+  const project = projectsData[Number(tab)]
   const modalBgRef = useRef<HTMLDivElement>(null)
 
   if (!tab) return
