@@ -8,7 +8,7 @@ import { SideMenuModal } from "@/components/SideMenuModal/SideMenuModal"
 import { SideMenu } from "@/components/SideMenu/SideMenu"
 import { PageDetails } from "@/components/PageDetails/PageDetails"
 import { SocialMediaButtons } from "@/components/SocialMediaButtons/SocialMediaButtons"
-import AboutMe from "@/components/AboutMe/AboutMe"
+import { AboutMe } from "@/components/AboutMe/AboutMe"
 
 
 export default function Home() {

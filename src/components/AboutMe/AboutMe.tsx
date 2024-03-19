@@ -8,7 +8,7 @@ import next from '/public/nextjs-original.svg'
 import tailwind from '/public/tailwindcss-original.svg'
 import styledComponents from '/public/styled-components.svg'
 
-export default function AboutMe() {
+export function AboutMe() {
   return (
     <>
       <p className="mt-4 w-[500px] mr-[138px] text-light-green tracking-wider">
@@ -17,6 +17,7 @@ export default function AboutMe() {
 
       <div>
         <h3 className='text-lg text-orange mt-8 justify-center'>Conhecimentos: </h3>
+
         <div className='flex gap-3 mt-3'>
           <Image src={html5} width={40} height={40} alt="html5 icon" />
           <Image src={css} width={40} height={40} alt="css icon" />
