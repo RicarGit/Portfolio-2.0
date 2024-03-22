@@ -56,11 +56,17 @@ button a {
       40px -40px 0 rgba(0, 0, 0, .3),
       80px -80px 0 rgba(0, 0, 0, .3)
   }
+
+  .big-diamond-shadows-small {
+    box-shadow: inset 4px -8px 8px rgba(0, 0, 0, .3),
+      30px -30px 0 rgba(0, 0, 0, .3),
+      60px -60px 0 rgba(0, 0, 0, .3)
+  }
 }
 
 @layer components {
   .buttonDiamond {
-    @apply h-10 w-10 z-10 border-3 rounded rotate-45;
+    @apply desktop:h-10 h-8 desktop:w-10 w-8 z-10 border-3 rounded rotate-45;
   }
 
   .subTitleDiamond {
