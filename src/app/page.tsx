@@ -26,19 +26,19 @@ export default function Home() {
         </>
       }
 
-      <main className='container relative mx-auto h-screen flex justify-end items-center px-5 desktop:px-0'>
+      <main className='container relative mx-auto h-screen flex laptop:justify-end justify-center items-center px-5'>
 
         <SocialMediaButtons />
 
         <div className="flex items-center">
-          <div className="relative text-white">
-            <p className="desktop:text-xl text-base tracking-widest">Olá!👋 Meu nome é <span className="font-extrabold bg-gradient-to-r from-orange to-transparent rounded py-0.5 pl-2 inline-block w-[36%]">Ricardo.</span></p>
+          <div className="relative text-white desktop:mr-0 laptop:mr-6">
+            <p className="desktop:text-xl tracking-wide tablet:tracking-wider desktop:tracking-widest">Olá!👋 Meu nome é <span className="font-extrabold bg-gradient-to-r from-orange to-transparent rounded desktop:py-0.5 pl-2 inline-block w-[46%] tablet:w-[36%]">Ricardo.</span></p>
 
             {showAboutMe
               ? <AboutMe />
               : <Title />}
 
-            <div className="flex gap-12 mt-24">
+            <div className="flex justify-center tablet:justify-normal desktop:gap-12 gap-6 desktop:mt-24 mt-16">
               <Button callbackState={setIsOpen} color="green">menu</Button>
               <Button callbackState={setShowAboutMe} color="orange">sobre</Button>
             </div>
