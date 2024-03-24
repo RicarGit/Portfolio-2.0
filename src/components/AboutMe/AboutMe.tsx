@@ -11,14 +11,14 @@ import styledComponents from '/public/styled-components.svg'
 export function AboutMe() {
   return (
     <>
-      <p className="mt-4 w-[500px] mr-[138px] text-light-green tracking-wider">
+      <p className="mt-4 desktop:w-[500px] laptop:w-[430px] w-full desktop:mr-[111px] laptop:pr-6 desktop:pr-0 text-light-green laptop:tracking-wide desktop:tracking-wider">
         Especializado em Front-End com foco na criação de interfaces dinâmicas e responsivas, estou comprometido em criar soluções web de alta qualidade, busco constantemente aprimorar a experiência do usuário através de soluções eficientes e modernas. Explore meu portfólio para ver meu trabalho em ação!
       </p>
 
       <div>
-        <h3 className='text-lg text-orange mt-8 justify-center'>Conhecimentos: </h3>
+        <h3 className='desktop:text-lg text-orange desktop:mt-8 mt-6'>Conhecimentos: </h3>
 
-        <div className='flex gap-3 mt-3'>
+        <div className='flex desktop:gap-3 mt-3 desktop:h-10 h-8'>
           <Image src={html5} width={40} height={40} alt="html5 icon" />
           <Image src={css} width={40} height={40} alt="css icon" />
           <Image src={javascript} width={40} height={40} alt="javascript icon" />
