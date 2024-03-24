@@ -2,7 +2,7 @@ import { SocialMediaButton } from "../SocialMediaButton/SocialMediaButton"
 
 export const SocialMediaButtons = () => {
   return (
-    <div className="absolute top-[10%] flex gap-12 justify-end">
+    <div className="absolute tablet:top-[10%] top-[6%] laptop:mr-2 flex desktop:gap-12 gap-10">
       <SocialMediaButton src='/github.svg' link="https://github.com/RicarGit" alt='github link' />
       <SocialMediaButton src='/linkedin.svg' link="https://www.linkedin.com/in/ricardo-gava-dev/" alt='linkedin link' />
       <SocialMediaButton src='/discord.svg' link="https://discord.gg/e5djqg63u3" alt='discord link' />
