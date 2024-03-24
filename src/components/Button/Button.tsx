@@ -20,10 +20,10 @@ export const Button = ({ color, link, callbackState, children }: ButtonProps) =>
   const handleClick = () => callbackState && callbackState(state => !state)
 
   return (
-    <button onClick={handleClick}>
-      <a href={link} target="_blank" className={`relative w-36 h-10 py-2 ${isOrange ? 'mr-8' : 'ml-8'} flex items-center justify-center`}>
-        <div className={`absolute ${isOrange ? 'right-[-25px]' : 'left-[-25px]'} buttonDiamond ${buttonColors[color]}`}></div>
-        <span className={`z-10 ${isOrange ? 'text-orange' : 'text-light-green'} text-sm font-bold uppercase tracking-widest`}>{children}</span>
+    <button onClick={handleClick} className={isOrange ? '' : 'hidden tablet:block'}>
+      <a href={link} target="_blank" className={`relative desktop:w-36 w-28 desktop:h-10 h-8 ${isOrange ? 'desktop:mr-8 mr-5' : 'desktop:ml-8 ml-5'} flex items-center justify-center`}>
+        <div className={`absolute ${isOrange ? 'desktop:right-[-25px] -right-4' : 'desktop:left-[-25px] -left-4'} buttonDiamond ${buttonColors[color]}`}></div>
+        <span className={`z-10 ${isOrange ? 'text-orange' : 'text-light-green'} desktop:text-sm text-xs font-bold uppercase tracking-widest`}>{children}</span>
         <Image src={buttonSvg} fill alt="bg-button" className={`${isOrange && 'rotate-180'}`} />
       </a>
     </button>
