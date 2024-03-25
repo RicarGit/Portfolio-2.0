@@ -20,9 +20,12 @@ const config: Config = {
         smartphone: '360px',
         tablet: '460px',
         laptop: '720px',
-        desktop: '960px'
+        desktop: '960px',
+        modal: '1200px'
       },
       container: {
+        center: true,
+        padding: '1.25rem',
         screens: {
           sm: '360px',
           md: '460px',
