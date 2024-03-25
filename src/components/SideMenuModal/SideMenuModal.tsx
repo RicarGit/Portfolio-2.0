@@ -29,7 +29,7 @@ export const SideMenuModal = () => {
 
   return (
     <div onClick={closeModal} ref={modalBgRef} className="absolute w-screen h-screen flex items-center z-20 backdrop-blur-sm">
-      <div className="absolute z-30 w-[70%] min-h-[80%] left-[300px] grid grid-cols-2 grid-rows-2 px-5 border-3 rounded bg-[radial-gradient(circle_at_80%_20%,_var(--tw-gradient-stops))] from-green via-dark-green via-50% to-dark-green">
+      <div className="absolute z-30 mr-5 modal:w-[70%] min-w-[530px] h-[90%] modal:left-[270px] left-[250px] grid grid-cols-1 modal:grid-cols-[minmax(560px,_1fr)_minmax(200px,_500px)] modal:grid-rows-2 px-5 border-3 rounded bg-[radial-gradient(circle_at_80%_20%,_var(--tw-gradient-stops))] from-green via-dark-green via-50% to-dark-green overflow-hidden">
 
         <ModalDetail color="green" position="top-right" />
         <ModalDetail color="blue" position="bottom-right" />
@@ -45,15 +45,15 @@ export const SideMenuModal = () => {
             </p>
           }
 
-          <div className="flex gap-12 mt-14 ml-5">
+          <div className="flex gap-6 mt-8 ml-5">
             <Button link={project.codeLink} color="green">código</Button>
             <Button link={project.deployLink} color="orange">visitar</Button>
           </div>
 
-          <Image src={separator} width={500} height={6} alt="" className="absolute bottom-[-6px]" />
+          <Image src={separator} width={500} height={6} alt="project description separator" className="absolute w-full modal:w-[75%] modal:bottom-[-14px] -bottom-5" />
         </div>
 
-        <div className="row-span-2 flex justify-center items-center">
+        <div className="hidden modal:flex row-span-2 justify-center items-center">
           <ProjectDiamond projectImage={project.projectImage} />
         </div>
 
