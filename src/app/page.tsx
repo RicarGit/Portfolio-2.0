@@ -26,7 +26,7 @@ export default function Home() {
         </>
       }
 
-      <main className='container relative mx-auto h-screen flex laptop:justify-end justify-center items-center px-5'>
+      <main className='container relative h-dvh flex laptop:justify-end justify-center items-center'>
 
         <SocialMediaButtons />
 
@@ -38,7 +38,7 @@ export default function Home() {
               ? <AboutMe />
               : <Title />}
 
-            <div className="flex justify-center tablet:justify-normal desktop:gap-12 gap-6 desktop:mt-24 mt-16">
+            <div className="flex justify-center tablet:justify-normal desktop:gap-10 gap-6 desktop:mt-24 mt-16">
               <Button callbackState={setIsOpen} color="green">menu</Button>
               <Button callbackState={setShowAboutMe} color="orange">sobre</Button>
             </div>
