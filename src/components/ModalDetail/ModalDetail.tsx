@@ -16,6 +16,6 @@ export const ModalDetail = ({ color, position }: ModalDetailProps) => {
   const isGreen = color === 'green'
 
   return (
-    <Image src={isGreen ? modalDetailGreen : modalDetailBlue} width={`${isGreen ? 130 : 250}`} height={`${isGreen ? 250 : 130}`} alt="" className={`absolute m-8 ${svgPositions[position]}`} />
+    <Image src={isGreen ? modalDetailGreen : modalDetailBlue} width={`${isGreen ? 130 : 250}`} height={`${isGreen ? 250 : 130}`} alt="modal detail" className={`absolute m-4 modal:m-8 ${svgPositions[position]}`} />
   )
 }

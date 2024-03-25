@@ -9,24 +9,24 @@ type TechnologiesProps = {
 
 export const Technologies = ({ techs, libs }: TechnologiesProps) => {
   return (
-    <div className="ml-4 text-white uppercase font-medium text-lg">
+    <div className="ml-4 text-white uppercase font-medium">
       {techs.length > 0 &&
-        <div className="flex relative gap-2">
+        <div className="flex relative">
           {techs.map(tech =>
             <div key={tech} className="flex relative justify-center items-center">
               <p className="absolute text-center">{tech}</p>
-              <Image key={tech} src={hexagonGreen} width={120} height={120} alt={tech} />
+              <Image key={tech} src={hexagonGreen} width={100} height={100} alt={tech} />
             </div>
           )}
         </div>
       }
 
       {libs.length > 0 &&
-        <div className="flex gap-2 relative left-[64px] -top-7">
+        <div className="inline-flex relative left-[50px] -top-[24px]">
           {libs.map(lib =>
             <div key={lib} className="flex relative justify-center items-center">
               <p className="absolute px-2 text-center">{lib || 'sem libs'}</p>
-              <Image src={hexagonOrange} width={120} height={120} alt={lib} />
+              <Image src={hexagonOrange} width={100} height={100} alt={lib} />
             </div>
           )}
         </div>
