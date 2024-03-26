@@ -29,7 +29,7 @@ export const SideMenuModal = () => {
 
   return (
     <div onClick={closeModal} ref={modalBgRef} className="absolute w-screen h-screen flex items-center z-20 backdrop-blur-sm">
-      <div className="absolute z-30 mr-5 modal:w-[70%] min-w-[530px] h-[90%] modal:left-[270px] left-[250px] grid grid-cols-1 modal:grid-cols-[minmax(560px,_1fr)_minmax(200px,_500px)] modal:grid-rows-2 px-5 border-3 rounded bg-[radial-gradient(circle_at_80%_20%,_var(--tw-gradient-stops))] from-green via-dark-green via-50% to-dark-green overflow-hidden">
+      <div className="absolute z-30 mr-5 modal:w-[70%] min-w-[530px] h-[90%] modal-lg:h-[80%] modal-lg:left-[270px] left-[250px] grid grid-cols-1 modal:grid-cols-[minmax(560px,_1fr)_minmax(200px,_500px)] modal:grid-rows-2 px-5 border-3 rounded bg-[radial-gradient(circle_at_80%_20%,_var(--tw-gradient-stops))] from-green via-dark-green via-50% to-dark-green overflow-hidden">
 
         <ModalDetail color="green" position="top-right" />
         <ModalDetail color="blue" position="bottom-right" />
