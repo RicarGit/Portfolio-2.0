@@ -21,7 +21,8 @@ const config: Config = {
         tablet: '460px',
         laptop: '720px',
         desktop: '960px',
-        modal: '1200px'
+        modal: '1200px',
+        'modal-lg': '1440px',
       },
       container: {
         center: true,
