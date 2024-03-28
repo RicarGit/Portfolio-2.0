@@ -1,7 +1,5 @@
-import { ReactNode } from "react"
-
 type SubTitleProps = {
-  children: ReactNode
+  children: string
 }
 
 export const SubTitle = ({ children }: SubTitleProps) => {
