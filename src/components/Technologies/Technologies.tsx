@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Hexagon from "../Hexagon/Hexagon"
 import hexagonGreen from "/public/hexagonGreen.svg"
 import hexagonOrange from "/public/hexagonOrange.svg"
 
@@ -13,10 +13,7 @@ export const Technologies = ({ techs, libs }: TechnologiesProps) => {
       {techs.length > 0 &&
         <div className="flex relative">
           {techs.map(tech =>
-            <div key={tech} className="flex relative justify-center items-center">
-              <p className="absolute text-center">{tech}</p>
-              <Image key={tech} src={hexagonGreen} width={100} height={100} alt={tech} />
-            </div>
+            <Hexagon key={tech} image={hexagonGreen} techOrLib={tech} />
           )}
         </div>
       }
@@ -24,10 +21,7 @@ export const Technologies = ({ techs, libs }: TechnologiesProps) => {
       {libs.length > 0 &&
         <div className="inline-flex relative left-[50px] -top-[24px]">
           {libs.map(lib =>
-            <div key={lib} className="flex relative justify-center items-center">
-              <p className="absolute px-2 text-center">{lib || 'sem libs'}</p>
-              <Image src={hexagonOrange} width={100} height={100} alt={lib} />
-            </div>
+            <Hexagon key={lib} image={hexagonOrange} techOrLib={lib || 'no libs'} />
           )}
         </div>
       }
