@@ -1,3 +1,22 @@
+import {
+  AboutMe,
+  Button,
+  CloseSideMenuButton,
+  Contact,
+  Footer,
+  ModalContent,
+  PageDetails,
+  ProfileDiamond,
+  ProjectThumbnail,
+  ProjectsThumbnailList,
+  SideMenu,
+  SideMenuModal,
+  SocialMediaButton,
+  SocialMediaButtons,
+  SubTitle,
+  Title
+} from "@/components"
+
 type HomeProps = {
   searchParams: {
     menu: boolean
