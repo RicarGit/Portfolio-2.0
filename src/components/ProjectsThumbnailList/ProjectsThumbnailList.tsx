@@ -1,13 +1,11 @@
-import { ProjectThumbnail } from "../ProjectThumbnail/ProjectThumbnail"
-import { projectsData } from "@/data/projectsData"
+type ThumbnailListProps = {
+  children: React.ReactNode
+}
 
-export const ProjectsThumbnailList = () => {
+export const ProjectsThumbnailList = ({ children }: ThumbnailListProps) => {
   return (
     <ul className="cursor-pointer w-full">
-      {projectsData &&
-        projectsData.map(({ projectName, thumbImage }, index) =>
-          <ProjectThumbnail key={projectName} projectIndex={index.toString()} thumbImage={thumbImage} />
-        )}
+      {children}
     </ul>
   )
 }
