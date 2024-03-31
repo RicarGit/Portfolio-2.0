@@ -1,5 +1,3 @@
-import { projectsData } from "@/data/projectsData"
-
 import {
   AboutMe,
   Button,
@@ -42,10 +40,7 @@ export default function Home({ searchParams }: HomeProps) {
 
           <nav>
             <ProjectsThumbnailList>
-              {projectsData &&
-                projectsData.map(({ projectName, thumbImage }, index) =>
-                  <ProjectThumbnail key={projectName} project={project} projectIndex={index.toString()} thumbImage={thumbImage} />
-                )}
+              <ProjectThumbnail project={project} />
             </ProjectsThumbnailList>
           </nav>
 
