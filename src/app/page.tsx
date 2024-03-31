@@ -1,19 +1,13 @@
-"use client"
+type HomeProps = {
+  searchParams: {
+    menu: boolean
+    aboutMe: boolean
+    project: string
+  }
+}
 
-import { useState } from "react"
-
-import { ProfileDiamond } from "@/components/ProfileDiamond/ProfileDiamond"
-import { Button } from "@/components/Button/Button"
-import { SideMenuModal } from "@/components/SideMenuModal/SideMenuModal"
-import { SideMenu } from "@/components/SideMenu/SideMenu"
-import { PageDetails } from "@/components/PageDetails/PageDetails"
-import { SocialMediaButtons } from "@/components/SocialMediaButtons/SocialMediaButtons"
-import { AboutMe } from "@/components/AboutMe/AboutMe"
-import { Title } from "@/components/Title/Title"
-
-export default function Home() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [showAboutMe, setShowAboutMe] = useState(false)
+export default function Home({ searchParams }: HomeProps) {
+  const { menu, aboutMe, project } = searchParams
 
   return (
     <>
@@ -34,13 +28,13 @@ export default function Home() {
           <div className="relative text-white desktop:mr-0 laptop:mr-6">
             <p className="desktop:text-xl tracking-wide tablet:tracking-wider desktop:tracking-widest">Olá!👋 Meu nome é <span className="font-extrabold bg-gradient-to-r from-orange to-transparent rounded desktop:py-0.5 pl-2 inline-block w-[46%] tablet:w-[36%]">Ricardo.</span></p>
 
-            {showAboutMe
+            {aboutMe
               ? <AboutMe />
               : <Title />}
 
             <div className="flex justify-center tablet:justify-normal desktop:gap-10 gap-6 desktop:mt-24 mt-16">
-              <Button callbackState={setIsOpen} color="green">menu</Button>
-              <Button callbackState={setShowAboutMe} color="orange">sobre</Button>
+              <Button link="menu" color="green">menu</Button>
+              <Button link="aboutMe" color="orange">sobre</Button>
             </div>
           </div>
 
