@@ -1,3 +1,5 @@
+import { projectsData } from "@/data/projectsData"
+
 import {
   AboutMe,
   Button,
@@ -32,16 +34,46 @@ export default function Home({ searchParams }: HomeProps) {
     <>
       <PageDetails />
 
-      {isOpen &&
-        <>
-          <SideMenu setIsOpen={setIsOpen} />
-          <SideMenuModal />
-        </>
+      {(menu || project) &&
+        <SideMenu>
+          <CloseSideMenuButton />
+
+          <SubTitle>Projetos</SubTitle>
+
+          <nav>
+            <ProjectsThumbnailList>
+              {projectsData &&
+                projectsData.map(({ projectName, thumbImage }, index) =>
+                  <ProjectThumbnail key={projectName} project={project} projectIndex={index.toString()} thumbImage={thumbImage} />
+                )}
+            </ProjectsThumbnailList>
+          </nav>
+
+          <Footer>
+            <SubTitle>Contato</SubTitle>
+
+            <Contact contactType="email" contact="ricardoagava@gmail.com" >Email</Contact>
+            <Contact contactType="whatsapp" contact="(11) 97328-3296" >Whatsapp</Contact>
+
+            <p className="absolute bottom-4 ml-4 text-dark-blue text-xs tracking-wide">Todos os direitos reservados.</p>
+          </Footer>
+        </SideMenu>
+      }
+
+      {project &&
+        <SideMenuModal>
+          <ModalContent project={project} />
+        </SideMenuModal>
       }
 
       <main className='container relative h-dvh flex laptop:justify-end justify-center items-center'>
 
-        <SocialMediaButtons />
+        <SocialMediaButtons>
+          <SocialMediaButton src='/github.svg' link="https://github.com/RicarGit" alt='github link' />
+          <SocialMediaButton src='/linkedin.svg' link="https://www.linkedin.com/in/ricardo-gava-dev/" alt='linkedin link' />
+          <SocialMediaButton src='/discord.svg' link="https://discord.gg/e5djqg63u3" alt='discord link' />
+          <SocialMediaButton src='/telegram.svg' link="https://t.me/RicardoGava" alt='telegram link' />
+        </SocialMediaButtons>
 
         <div className="flex items-center">
           <div className="relative text-white desktop:mr-0 laptop:mr-6">
