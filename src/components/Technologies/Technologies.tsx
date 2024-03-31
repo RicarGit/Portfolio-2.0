@@ -1,6 +1,7 @@
-import Hexagon from "../Hexagon/Hexagon"
 import hexagonGreen from "/public/hexagonGreen.svg"
 import hexagonOrange from "/public/hexagonOrange.svg"
+
+import { Hexagon } from "../Hexagon/Hexagon"
 
 type TechnologiesProps = {
   techs: string[],

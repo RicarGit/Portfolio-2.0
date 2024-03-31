@@ -5,7 +5,7 @@ type HexagonProps = {
   image: StaticImageData
 }
 
-export default function Hexagon({ techOrLib, image }: HexagonProps) {
+export const Hexagon = ({ techOrLib, image }: HexagonProps) => {
   return (
     <div key={techOrLib} className="flex relative justify-center items-center">
       <p className="absolute px-1 text-center">{techOrLib}</p>
