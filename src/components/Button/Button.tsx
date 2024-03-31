@@ -4,9 +4,8 @@ import Link from "next/link"
 
 type ButtonProps = {
   color: 'green' | 'orange'
-  link?: string
-  callbackState?: React.Dispatch<SetStateAction<boolean>>
-  children: ReactNode
+  link: 'menu' | 'aboutMe' | string
+  children: string
 }
 
 const buttonColors = {
