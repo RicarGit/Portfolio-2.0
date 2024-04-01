@@ -62,6 +62,12 @@ button a {
       30px -30px 0 rgba(0, 0, 0, .3),
       60px -60px 0 rgba(0, 0, 0, .3)
   }
+
+  .big-diamond-shadows-mobile {
+    box-shadow: inset 4px -8px 8px rgba(0, 0, 0, .3),
+      20px -20px 0 rgba(0, 0, 0, .3),
+      40px -40px 0 rgba(0, 0, 0, .3)
+  }
 }
 
 @layer components {
