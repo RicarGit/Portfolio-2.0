@@ -72,7 +72,7 @@ export default function Home({ searchParams }: HomeProps) {
 
         <div className="flex items-center">
           <div className="relative text-white desktop:mr-0 laptop:mr-6">
-            <p className="desktop:text-xl tracking-wide tablet:tracking-wider desktop:tracking-widest">Olá!👋 Meu nome é <span className="font-extrabold bg-gradient-to-r from-orange to-transparent rounded desktop:py-0.5 pl-2 inline-block w-[46%] tablet:w-[36%]">Ricardo.</span></p>
+            <p className="desktop:text-xl font-medium text-right tablet:text-left tracking-wide tablet:tracking-wider desktop:tracking-widest">Olá!👋 Meu nome é <span className="font-extrabold text-left bg-gradient-to-r from-orange to-transparent rounded desktop:py-0.5 pl-2 inline-block w-[44%] tablet:w-[36%]">Ricardo.</span></p>
 
             {aboutMe
               ? <AboutMe />
