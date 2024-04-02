@@ -4,7 +4,7 @@ type ThumbnailListProps = {
 
 export const ProjectsThumbnailList = ({ children }: ThumbnailListProps) => {
   return (
-    <ul className="cursor-pointer w-full pb-5">
+    <ul className="cursor-pointer w-full tablet:pb-[8%]">
       {children}
     </ul>
   )
