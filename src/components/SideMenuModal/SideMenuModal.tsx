@@ -18,7 +18,7 @@ export const SideMenuModal = ({ children }: MenuModaLProps) => {
   }
 
   return (
-    <div onClick={closeModal} id="modal" className="absolute w-screen h-screen flex items-center z-20 backdrop-blur-sm">
+    <div onClick={closeModal} id="modal" className="hidden absolute w-screen h-screen tablet:flex items-center z-20 backdrop-blur-sm">
       {children}
     </div>
   )
