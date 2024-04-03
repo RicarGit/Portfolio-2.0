@@ -5,8 +5,8 @@ import close from "/public/close.svg"
 
 export const CloseSideMenuButton = () => {
   return (
-    <button className="absolute right-[8%] top-[2%]" >
-      <Link href='/' className="block p-4" >
+    <button className="absolute right-5 top-5 tablet:right-3 tablet:top-3" >
+      <Link href='/' className="block p-4 tablet:p-3" >
         <Image src={close} fill alt="close button" />
       </Link>
     </button>
