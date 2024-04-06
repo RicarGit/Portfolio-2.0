@@ -76,11 +76,19 @@ export default function Home({ searchParams }: HomeProps) {
 
             {aboutMe
               ? <AboutMe />
-              : <Title />}
+              : <Title />
+            }
 
             <div className="flex justify-center tablet:justify-normal desktop:gap-10 gap-6 desktop:mt-24 mt-16">
-              <Button link="menu" color="green">menu</Button>
-              <Button link="aboutMe" color="orange">sobre</Button>
+              <Button
+                link={`${menu ? 'home' : 'menu'}`}
+                color="green">{menu ? 'close' : 'menu'}
+              </Button>
+
+              <Button
+                link={`${aboutMe ? 'home' : 'aboutMe'}`}
+                color="orange">{aboutMe ? 'home' : 'sobre'}
+              </Button>
             </div>
           </div>
 

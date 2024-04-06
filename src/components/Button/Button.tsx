@@ -4,7 +4,7 @@ import Link from "next/link"
 
 type ButtonProps = {
   color: 'green' | 'orange'
-  link: 'menu' | 'aboutMe' | string
+  link: 'menu' | 'aboutMe' | 'home' | string
   children: string
 }
 
