@@ -10,7 +10,7 @@ type TechnologiesProps = {
 
 export const Technologies = ({ techs, libs }: TechnologiesProps) => {
   return (
-    <div className="ml-4 text-white uppercase font-medium">
+    <div className="mx-4 text-white uppercase w-72 laptop:w-auto text-xs laptop:text-base laptop:font-medium">
       {techs.length > 0 &&
         <div className="flex relative">
           {techs.map(tech =>
@@ -20,7 +20,7 @@ export const Technologies = ({ techs, libs }: TechnologiesProps) => {
       }
 
       {libs.length > 0 &&
-        <div className="inline-flex relative left-[50px] -top-[24px]">
+        <div className="flex relative left-9 -top-[16px] laptop:left-[50px] laptop:-top-[24px]">
           {libs.map(lib =>
             <Hexagon key={lib} image={hexagonOrange} techOrLib={lib || 'no libs'} />
           )}
