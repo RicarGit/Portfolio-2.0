@@ -28,7 +28,7 @@ export const ModalContent = ({ project }: ModalContentProps) => {
   } = projectsData[Number(project)]
 
   return (
-    <div className="absolute z-30 mr-5 modal:max-w-[70%] h-[90%] modal-lg:h-[80%] modal-lg:left-[270px] left-[236px] laptop:left-[250px] grid grid-cols-1 modal:grid-cols-[minmax(560px,_1fr)_minmax(200px,_500px)] modal:grid-rows-2 pr-3 laptop:px-5 border-3 rounded bg-[radial-gradient(circle_at_80%_20%,_var(--tw-gradient-stops))] from-green via-dark-green via-50% to-dark-green overflow-auto laptop:overflow-hidden" >
+    <div className="absolute z-30 mr-5 modal:max-w-[70%] h-[90%] modal-lg:h-[80%] modal-lg:left-[270px] left-[236px] laptop:left-[250px] grid grid-cols-1 modal:grid-cols-[minmax(560px,_1fr)_minmax(200px,_500px)] modal:grid-rows-2 pr-3 laptop:px-5 border-3 rounded bg-[radial-gradient(circle_at_85%_15%,_var(--tw-gradient-stops))] laptop:bg-[radial-gradient(circle_at_80%_20%,_var(--tw-gradient-stops))] from-green via-dark-green laptop:via-50% via-45% to-dark-green overflow-auto laptop:overflow-hidden" >
       <ModalDetail color="green" position="top-right" />
       <ModalDetail color="blue" position="bottom-right" />
 
