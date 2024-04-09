@@ -40,7 +40,9 @@ export default function Home({ searchParams }: HomeProps) {
 
           <nav>
             <ProjectsThumbnailList>
-              <ProjectThumbnail project={project} />
+              <ProjectThumbnail project={project} >
+                <ModalContent project={project} />
+              </ProjectThumbnail>
             </ProjectsThumbnailList>
           </nav>
 

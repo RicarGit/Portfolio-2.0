@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 
@@ -5,9 +7,10 @@ import { projectsData } from "@/data/projectsData"
 
 type ProjectThumbnailProps = {
   project: string
+  children: React.ReactNode
 }
 
-export const ProjectThumbnail = ({ project }: ProjectThumbnailProps) => {
+export const ProjectThumbnail = ({ project, children }: ProjectThumbnailProps) => {
   if (!projectsData) return
 
   return (
@@ -20,6 +23,8 @@ export const ProjectThumbnail = ({ project }: ProjectThumbnailProps) => {
 
           <Image src={thumbImage} style={{ height: '100%' }} priority alt="project thumbnail" />
         </Link>
+
+        {project === index.toString() && window.innerWidth < 460 && children}
       </li>
     )))
 }
