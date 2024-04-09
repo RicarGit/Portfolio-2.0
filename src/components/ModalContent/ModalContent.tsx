@@ -28,7 +28,7 @@ export const ModalContent = ({ project }: ModalContentProps) => {
   } = projectsData[Number(project)]
 
   return (
-    <div className="absolute z-30 mr-5 modal:max-w-[70%] h-[90%] modal-lg:h-[80%] modal-lg:left-[270px] left-[236px] laptop:left-[250px] grid grid-cols-1 modal:grid-cols-[minmax(560px,_1fr)_minmax(200px,_500px)] modal:grid-rows-2 pr-3 laptop:px-5 border-3 rounded bg-[radial-gradient(circle_at_85%_15%,_var(--tw-gradient-stops))] laptop:bg-[radial-gradient(circle_at_80%_20%,_var(--tw-gradient-stops))] from-green via-dark-green laptop:via-50% via-45% to-dark-green overflow-auto laptop:overflow-hidden" >
+    <div className={`${!project && 'hidden'} relative tablet:absolute items-center modal:items-stretch z-30 tablet:mr-5 tablet:max-w-[70%] h-auto tablet:h-[90%] modal-lg:h-[80%] modal-lg:left-[270px] tablet:left-[236px] laptop:left-[250px] tablet:grid grid-cols-1 modal:grid-cols-[minmax(560px,_1fr)_minmax(200px,_500px)] modal:grid-rows-2 pr-3 laptop:px-5 border-t-[0] tablet:border-x-[3px] tablet:border-y-[3px] tablet:rounded tablet:bg-[radial-gradient(circle_at_85%_15%,_var(--tw-gradient-stops))] laptop:bg-[radial-gradient(circle_at_80%_20%,_var(--tw-gradient-stops))] from-green via-dark-green laptop:via-50% via-45% to-dark-green overflow-auto laptop:overflow-hidden`} >
       <ModalDetail color="green" position="top-right" />
       <ModalDetail color="blue" position="bottom-right" />
 
@@ -43,12 +43,12 @@ export const ModalContent = ({ project }: ModalContentProps) => {
           </p>
         }
 
-        <div className="flex flex-wrap justify-center laptop:justify-start gap-6 mt-8 ml-5">
+        <div className="flex flex-wrap justify-center laptop:justify-start gap-6 mt-8 tablet:ml-5">
           <Button link={codeLink} color="green">código</Button>
           <Button link={deployLink} color="orange">visitar</Button>
         </div>
 
-        <Image src={separator} width={500} height={6} alt="project description separator" className="absolute w-[70%] ml-10 modal:w-[75%] modal:bottom-[-14px] -bottom-5" />
+        <Image src={separator} width={500} height={6} alt="project description separator" className="relative tablet:absolute pt-5 pb-8 tablet:pt-0 tablet:pb-0 w-[85%] modal:w-[75%] modal:bottom-[-14px] -bottom-5 tablet:-bottom-8 left-1/2 modal:left-0 -translate-x-1/2 modal:translate-x-0" />
       </div>
 
       <div className="hidden modal:flex row-span-2 justify-center items-center">
