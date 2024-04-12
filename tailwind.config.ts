@@ -37,7 +37,9 @@ const config: Config = {
       animation: {
         menuSlideIn: 'menuSlideIn 0.7s ease forwards',
         widthAnimation: 'widthAnimation 2s ease forwards',
+        rotateRight: 'rotateRight 1.5s 0.5s ease forwards',
         socialMediaRotate: 'socialMediaRotate 2s ease forwards',
+        hidden: 'hidden 2s ease forwards',
         shadows: 'shadows 2s ease forwards'
       },
       keyframes: {
@@ -47,10 +49,19 @@ const config: Config = {
         widthAnimation: {
           'from': { width: '0' }
         },
+        rotateRight: {
+          'from': { transform: 'rotate(0deg)' },
+          'to': { transform: 'rotate(45deg)' }
+        },
         socialMediaRotate: {
           '0%': { transform: 'rotate(0)', 'box-shadow': 'none' },
           '70%': { 'box-shadow': 'none' },
           '100%': { transform: 'rotate(45deg)' }
+        },
+        hidden: {
+          '0%': { opacity: '0' },
+          '70%': { opacity: '0' },
+          '100%': { opacity: '1' }
         },
         shadows: {
           '0%': { 'box-shadow': 'none' },
