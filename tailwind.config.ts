@@ -34,6 +34,14 @@ const config: Config = {
           xl: '960px'
         }
       },
+      animation: {
+        menuSlideIn: 'menuSlideIn 0.7s ease forwards',
+      },
+      keyframes: {
+        menuSlideIn: {
+          'from': { transform: 'translateX(-100%)' }
+        },
+      }
     },
   },
   plugins: [],
