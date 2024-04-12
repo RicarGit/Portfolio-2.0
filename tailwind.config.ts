@@ -36,11 +36,15 @@ const config: Config = {
       },
       animation: {
         menuSlideIn: 'menuSlideIn 0.7s ease forwards',
+        widthAnimation: 'widthAnimation 2s ease forwards',
         socialMediaRotate: 'socialMediaRotate 2s ease forwards',
       },
       keyframes: {
         menuSlideIn: {
           'from': { transform: 'translateX(-100%)' }
+        },
+        widthAnimation: {
+          'from': { width: '0' }
         },
         socialMediaRotate: {
           '0%': { transform: 'rotate(0)', 'box-shadow': 'none' },
