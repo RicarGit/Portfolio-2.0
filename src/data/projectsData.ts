@@ -15,8 +15,8 @@ import albumFotos from "/public/albumFotos.png"
 export const projectsData = [
   {
     projectName: 'Dogs Social Media',
-    description: 'Uma rede social para cachorros com sistema de criação de conta, login, senha perdida, posts, curtidas, views, comentários e gráfico de estatisticas.',
-    myImprovements: 'Fiz o projeto todo em typescript, adicionei e aprendi a usar libs que nunca tinha usado, react-hook-form para controlar e validar os formulários, zod para validação dos formulários, zustand para criação de contexto global.',
+    description: 'Uma rede social para cachorros com sistema de criação de conta, login, senha perdida, posts, curtidas, views, comentários e gráfico de estatísticas.',
+    myImprovements: 'Fiz o projeto todo em typescript, adicionei e aprendi a usar libs que nunca tinha usado, react-hook-form para controlar e validar os formulários, zod para validação dos formulários e zustand para criação de contexto global.',
     techs: ['html', 'css', 'react', 'ts'],
     libs: ['victory', 'zod', 'zustand', 'hook form'],
     codeLink: 'https://github.com/RicarGit/Dogs-Social-Media',
@@ -38,7 +38,7 @@ export const projectsData = [
   {
     projectName: 'Galeria de Fotos',
     description: 'Projeto feito com intuito de aprender a usar o banco de dados do firebase, utilizando o banco para armazenar e buscar imagens.',
-    myImprovements: 'Design do input e botões, funções de baixar e deletar imagem, filtro no nome, tamanho e extensões das imagens usando Regex, exibição de sucesso e possiveis erros na hora de fazer upload da imagem e responsividade.',
+    myImprovements: 'Design do input e botões, funções de baixar e deletar imagem, filtro no nome, tamanho e extensões das imagens usando regex, exibição de sucesso e possíveis erros na hora de fazer upload da imagem e responsividade.',
     techs: ['html', 'css', 'react', 'ts'],
     libs: ['styled comp.', 'jest', 'firebase'],
     codeLink: 'https://github.com/RicarGit/Gallery',
@@ -49,7 +49,7 @@ export const projectsData = [
   {
     projectName: 'DevMemory',
     description: 'Um jogo da memória feito para praticar um pouco de lógica, estados do react e eventos de click.',
-    myImprovements: 'Todas as animações, adição de mais 8 cards, novas imagens dos cards, component de recorde que armazena o melhor tempo e menores movimentos do jogador no navegador do usuário, tema dark e responsividade.',
+    myImprovements: 'Todas as animações, adição de mais 8 cards, novas imagens dos cards, componente de recorde que armazena o melhor tempo e menores movimentos do jogador no navegador do usuário, tema dark e responsividade.',
     techs: ['html', 'css', 'react', 'ts'],
     libs: ['styled comp.'],
     codeLink: 'https://github.com/RicarGit/React-Memory-Game',
@@ -60,7 +60,7 @@ export const projectsData = [
   {
     projectName: 'Calculadora de IMC',
     description: 'Meu primeiro projeto feito em React, uma calculadora que mede seu IMC - índice de massa corporal, calculando os resultados baseados na altura e peso atual da pessoa, podendo retornar 4 possíveis resultados dependendo do valor do IMC.',
-    myImprovements: 'Mudanças no design do botão voltar, tamanho dos components e conteúdos.',
+    myImprovements: 'Mudanças no design do botão voltar, tamanho dos componentes e conteúdos.',
     techs: ['html', 'css modules', 'react', 'ts'],
     libs: [''],
     codeLink: 'https://github.com/RicarGit/React-Project_Imc_Calculator',
@@ -70,7 +70,7 @@ export const projectsData = [
   },
   {
     projectName: 'Álbum de Fotos',
-    description: 'Projeto feito com o objetivo de criar 3 páginas de um álbum de fotos consumindo uma fake api, uma página listando todos os álguns, uma página contendo todas as fotos do álbum selcionado, e por último a página contendo a foto selecionada.',
+    description: 'Projeto feito com o objetivo de criar 3 páginas de um álbum de fotos consumindo uma api fake, uma página listando todos os álbuns, uma página contendo todas as fotos do álbum selecionado, e por último a página contendo a foto selecionada.',
     myImprovements: 'Estilo visual do projeto, botão voltar, botão para voltar ao topo da página, paginação simples e responsividade.',
     techs: ['html', 'css', 'react', 'ts'],
     libs: ['styled comp.', 'axios', 'router dom'],
