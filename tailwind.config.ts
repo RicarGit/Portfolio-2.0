@@ -38,6 +38,7 @@ const config: Config = {
         menuSlideIn: 'menuSlideIn 0.7s ease forwards',
         widthAnimation: 'widthAnimation 2s ease forwards',
         socialMediaRotate: 'socialMediaRotate 2s ease forwards',
+        shadows: 'shadows 2s ease forwards'
       },
       keyframes: {
         menuSlideIn: {
@@ -51,6 +52,10 @@ const config: Config = {
           '70%': { 'box-shadow': 'none' },
           '100%': { transform: 'rotate(45deg)' }
         },
+        shadows: {
+          '0%': { 'box-shadow': 'none' },
+          '70%': { 'box-shadow': 'none' }
+        }
       }
     },
   },
