@@ -38,6 +38,7 @@ const config: Config = {
         menuSlideIn: 'menuSlideIn 0.7s ease forwards',
         widthAnimation: 'widthAnimation 2s ease forwards',
         rotateRight: 'rotateRight 1.5s 0.5s ease forwards',
+        rotateLeft: 'rotateLeft 2s ease forwards',
         socialMediaRotate: 'socialMediaRotate 2s ease forwards',
         hidden: 'hidden 2s ease forwards',
         shadows: 'shadows 2s ease forwards'
@@ -52,6 +53,10 @@ const config: Config = {
         rotateRight: {
           'from': { transform: 'rotate(0deg)' },
           'to': { transform: 'rotate(45deg)' }
+        },
+        rotateLeft: {
+          'from': { transform: 'rotate(0deg)' },
+          'to': { transform: 'rotate(-45deg)' }
         },
         socialMediaRotate: {
           '0%': { transform: 'rotate(0)', 'box-shadow': 'none' },
