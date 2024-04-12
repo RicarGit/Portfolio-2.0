@@ -72,7 +72,7 @@ button a {
 
 @layer components {
   .buttonDiamond {
-    @apply desktop:h-10 h-8 desktop:w-10 w-8 z-10 border-3 rounded rotate-45;
+    @apply desktop:h-10 h-8 desktop:w-10 w-8 z-10 border-3 rounded;
   }
 
   .subTitleDiamond {
