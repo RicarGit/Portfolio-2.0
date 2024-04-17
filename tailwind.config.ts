@@ -46,6 +46,7 @@ const config: Config = {
         shadows: 'shadows 2s ease forwards',
         fadeIn: 'fadeIn 2s ease forwards',
         fadeInTop: 'fadeInTop 2s ease forwards',
+        fadeInBottom: 'fadeInBottom 2s ease forwards'
       },
       keyframes: {
         widthAnimation: {
@@ -88,7 +89,11 @@ const config: Config = {
           '30%': { opacity: '0' }
         },
         fadeInTop: {
-          '0%': { transform: 'translateY(-80%)', opacity: '0' },
+          '0%': { transform: 'translateY(-100%)', opacity: '0' },
+          '50%': { opacity: '0' }
+        },
+        fadeInBottom: {
+          '0%': { transform: 'translateY(100%)', opacity: '0' },
           '50%': { opacity: '0' }
         },
       }

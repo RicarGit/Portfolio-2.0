@@ -12,7 +12,7 @@ export const Technologies = ({ techs, libs }: TechnologiesProps) => {
   return (
     <div className="mx-4 text-white uppercase w-72 laptop:w-auto text-xs laptop:text-base laptop:font-medium">
       {techs.length > 0 &&
-        <div className="flex relative">
+        <div className="flex relative animate-fadeInTop">
           {techs.map(tech =>
             <Hexagon key={tech} image={hexagonGreen} techOrLib={tech} />
           )}
@@ -20,7 +20,7 @@ export const Technologies = ({ techs, libs }: TechnologiesProps) => {
       }
 
       {libs.length > 0 &&
-        <div className="flex relative left-9 -top-[16px] laptop:left-[50px] laptop:-top-[24px]">
+        <div className="flex relative left-9 -top-[16px] laptop:left-[50px] laptop:-top-[24px] animate-fadeInBottom">
           {libs.map(lib =>
             <Hexagon key={lib} image={hexagonOrange} techOrLib={lib || 'no libs'} />
           )}
