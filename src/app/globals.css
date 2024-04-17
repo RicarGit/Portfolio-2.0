@@ -70,8 +70,9 @@ button a {
   }
 
   .titleGradient {
-    background: linear-gradient(to top, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #386664, #386664, #0A0C0F,
+    background: linear-gradient(to top, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #386664, #386664, #0A0C0F,
         #0A0C0F);
+    background-size: 100% 400%;
     background-clip: text;
   }
 }
