@@ -37,6 +37,7 @@ const config: Config = {
       animation: {
         menuSlideIn: 'menuSlideIn 0.7s ease forwards',
         widthAnimation: 'widthAnimation 2s ease forwards',
+        modalAnimation: 'modalAnimation 1s ease forwards',
         rotateRight: 'rotateRight 1.5s 0.5s ease forwards',
         rotateLeft: 'rotateLeft 2s ease forwards',
         rotateRight405: 'rotateRight405 2s ease forwards',
@@ -52,6 +53,9 @@ const config: Config = {
         },
         widthAnimation: {
           'from': { width: '0' }
+        },
+        modalAnimation: {
+          'from': { height: '0', opacity: '0' }
         },
         rotateRight: {
           'from': { transform: 'rotate(0deg)' },
