@@ -35,7 +35,6 @@ const config: Config = {
         }
       },
       animation: {
-        menuSlideIn: 'menuSlideIn 0.7s ease forwards',
         widthAnimation: 'widthAnimation 2s ease forwards',
         sizeAnimation: 'sizeAnimation 2s ease forwards',
         modalAnimation: 'modalAnimation 1s ease forwards',
@@ -49,9 +48,6 @@ const config: Config = {
         fadeInTop: 'fadeInTop 2s ease forwards',
       },
       keyframes: {
-        menuSlideIn: {
-          'from': { transform: 'translateX(-100%)' }
-        },
         widthAnimation: {
           'from': { width: '0' }
         },
@@ -95,7 +91,6 @@ const config: Config = {
           '0%': { transform: 'translateY(-80%)', opacity: '0' },
           '50%': { opacity: '0' }
         },
-        }
       }
     },
   },
