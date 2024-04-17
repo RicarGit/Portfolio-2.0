@@ -44,6 +44,7 @@ const config: Config = {
         socialMediaRotate: 'socialMediaRotate 2s ease forwards',
         hidden: 'hidden 2s ease forwards',
         shadows: 'shadows 2s ease forwards',
+        gradient: 'gradient 3s ease-in-out forwards',
         fadeIn: 'fadeIn 2s ease forwards',
         fadeInTop: 'fadeInTop 2s ease forwards',
         fadeInBottom: 'fadeInBottom 2s ease forwards'
@@ -83,6 +84,10 @@ const config: Config = {
         shadows: {
           '0%': { 'box-shadow': 'none', filter: 'drop-shadow(0 0 #000)' },
           '70%': { 'box-shadow': 'none', filter: 'drop-shadow(0 0 #000)' }
+        },
+        gradient: {
+          '0%': { 'background-size': '100% 100%' },
+          '100%': { 'background-size': '100% 600%' }
         },
         fadeIn: {
           '0%': { transform: 'translateX(-20%)', opacity: '0' },
