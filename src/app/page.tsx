@@ -32,30 +32,28 @@ export default function Home({ searchParams }: HomeProps) {
     <>
       <PageDetails />
 
-      {(menu || project) &&
-        <SideMenu>
-          <CloseSideMenuButton />
+      <SideMenu menu={menu} project={project} >
+        <CloseSideMenuButton />
 
-          <SubTitle>Projetos</SubTitle>
+        <SubTitle>Projetos</SubTitle>
 
-          <nav>
-            <ProjectsThumbnailList>
-              <ProjectThumbnail project={project} >
-                <ModalContent project={project} />
-              </ProjectThumbnail>
-            </ProjectsThumbnailList>
-          </nav>
+        <nav>
+          <ProjectsThumbnailList>
+            <ProjectThumbnail project={project} >
+              <ModalContent project={project} />
+            </ProjectThumbnail>
+          </ProjectsThumbnailList>
+        </nav>
 
-          <Footer>
-            <SubTitle>Contato</SubTitle>
+        <Footer>
+          <SubTitle>Contato</SubTitle>
 
-            <Contact contactType="email" contact="ricardoagava@gmail.com" >Email</Contact>
-            <Contact contactType="whatsapp" contact="(11) 97328-3296" >Whatsapp</Contact>
+          <Contact contactType="email" contact="ricardoagava@gmail.com" >Email</Contact>
+          <Contact contactType="whatsapp" contact="(11) 97328-3296" >Whatsapp</Contact>
 
-            <p className="tablet:absolute mt-20 tablet:bottom-2 modal-lg:bottom-5 mb-2 tablet:mb-0 ml-4 text-dark-blue text-center text-xs tracking-wide" >Todos os direitos reservados.</p>
-          </Footer>
-        </SideMenu>
-      }
+          <p className="tablet:absolute mt-20 tablet:bottom-2 modal-lg:bottom-5 mb-2 tablet:mb-0 ml-4 text-dark-blue text-center text-xs tracking-wide" >Todos os direitos reservados.</p>
+        </Footer>
+      </SideMenu>
 
       {project &&
         <SideMenuModal>
@@ -74,7 +72,7 @@ export default function Home({ searchParams }: HomeProps) {
 
         <div className="flex items-center">
           <div className="relative text-white desktop:mr-0 laptop:mr-6">
-            <p className="desktop:text-xl font-medium ml-5 tablet:ml-0 tablet:text-left tracking-wide tablet:tracking-wider desktop:tracking-widest">Olá!👋 Meu nome é <span className="inline-block w-[44%] tablet:w-[36%] font-extrabold text-left bg-gradient-to-r from-orange to-transparent rounded desktop:py-0.5 pl-2 animate-widthAnimation">Ricardo.</span></p>
+            <p className="desktop:text-xl font-medium ml-10 tablet:ml-0 tablet:text-left tracking-wide tablet:tracking-wider desktop:tracking-widest">Olá!👋 Meu nome é <span className="inline-block w-[44%] tablet:w-[36%] font-extrabold text-left bg-gradient-to-r from-orange to-transparent rounded desktop:py-0.5 pl-2 animate-widthAnimation">Ricardo.</span></p>
 
             {aboutMe
               ? <AboutMe />
