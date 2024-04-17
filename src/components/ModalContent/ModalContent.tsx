@@ -36,12 +36,12 @@ export const ModalContent = ({ project }: ModalContentProps) => {
         <SubTitle>{projectName}</SubTitle>
 
         <p className="text-light-green max-w-[600px] ml-5 animate-fadeInTop">{description}</p>
-        {myImprovements &&
+
         <p className="text-light-green max-w-[600px] ml-5 mt-5 animate-fadeIn">
-            <span className="text-orange">Minhas melhorias: </span>
-            {myImprovements}
-          </p>
-        }
+          <span className="text-orange font-medium">{myImprovements && 'Minhas melhorias: '}</span>
+          {myImprovements}
+        </p>
+
 
         <div className="flex flex-wrap justify-center laptop:justify-start gap-6 mt-8 tablet:ml-5">
           <Button link={codeLink} color="green">código</Button>
