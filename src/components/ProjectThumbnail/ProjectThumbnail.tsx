@@ -1,5 +1,7 @@
 "use client"
 
+import { useEffect, useState } from "react"
+
 import Image from "next/image"
 import Link from "next/link"
 
@@ -11,6 +13,12 @@ type ProjectThumbnailProps = {
 }
 
 export const ProjectThumbnail = ({ project, children }: ProjectThumbnailProps) => {
+  const [userWidth, setUserWidth] = useState(0)
+
+  useEffect(() => {
+    setUserWidth(document.documentElement.clientWidth)
+  }, [])
+
   if (!projectsData) return
 
   return (
@@ -24,7 +32,10 @@ export const ProjectThumbnail = ({ project, children }: ProjectThumbnailProps) =
           <Image src={thumbImage} style={{ height: '100%' }} priority alt="project thumbnail" />
         </Link>
 
-        {project === index.toString() && window.innerWidth < 460 && children}
+        {project === index.toString() &&
+          userWidth < 460 &&
+          children
+        }
       </li>
     )))
 }
