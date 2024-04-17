@@ -42,6 +42,8 @@ const config: Config = {
         socialMediaRotate: 'socialMediaRotate 2s ease forwards',
         hidden: 'hidden 2s ease forwards',
         shadows: 'shadows 2s ease forwards',
+        fadeIn: 'fadeIn 2s ease forwards',
+        fadeInTop: 'fadeInTop 2s ease forwards',
       },
       keyframes: {
         menuSlideIn: {
@@ -71,6 +73,14 @@ const config: Config = {
         shadows: {
           '0%': { 'box-shadow': 'none', filter: 'drop-shadow(0 0 #000)' },
           '70%': { 'box-shadow': 'none', filter: 'drop-shadow(0 0 #000)' }
+        },
+        fadeIn: {
+          '0%': { transform: 'translateX(-20%)', opacity: '0' },
+          '30%': { opacity: '0' }
+        },
+        fadeInTop: {
+          '0%': { transform: 'translateY(-80%)', opacity: '0' },
+          '50%': { opacity: '0' }
         },
         }
       }

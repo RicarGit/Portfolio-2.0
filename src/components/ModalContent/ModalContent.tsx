@@ -35,9 +35,9 @@ export const ModalContent = ({ project }: ModalContentProps) => {
       <div className="relative">
         <SubTitle>{projectName}</SubTitle>
 
-        <p className="text-light-green max-w-[600px] ml-5">{description}</p>
+        <p className="text-light-green max-w-[600px] ml-5 animate-fadeInTop">{description}</p>
         {myImprovements &&
-          <p className="text-light-green max-w-[600px] ml-5 mt-5">
+        <p className="text-light-green max-w-[600px] ml-5 mt-5 animate-fadeIn">
             <span className="text-orange">Minhas melhorias: </span>
             {myImprovements}
           </p>
