@@ -68,6 +68,12 @@ button a {
       20px -20px 0 rgba(0, 0, 0, .3),
       40px -40px 0 rgba(0, 0, 0, .3)
   }
+
+  .titleGradient {
+    background: linear-gradient(to top, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #0A0C0F, #386664, #386664, #0A0C0F,
+        #0A0C0F);
+    background-clip: text;
+  }
 }
 
 @layer components {
