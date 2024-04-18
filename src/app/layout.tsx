@@ -6,10 +6,13 @@ import "./globals.css"
 const fira_code = Fira_Code({ subsets: ["latin"], variable: '--font-fira-code' })
 const archivo = Archivo({ subsets: ["latin"], variable: '--font-archivo' })
 
+import { PageDetails } from "@/components"
 
 export const metadata: Metadata = {
   title: "Portfólio Next",
-  description: "Ricardo Gava's Portfólio",
+  description: "Ricardo Gava's Portfolio",
+  keywords: ['Front-End Developer, Desenvolvedor Fron-End, Web Developer, Desenvolvedor Web, Portfólio Nextjs, Portfolio Nextjs'],
+  authors: [{ name: 'Ricardo Augusto Gava', url: 'https://portfolio-ricardo-2-0.vercel.app/' }]
 }
 
 export default function RootLayout({
