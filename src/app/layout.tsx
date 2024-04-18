@@ -19,7 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${fira_code.variable} ${archivo.variable} bg-[radial-gradient(circle_at_80%_20%,_var(--tw-gradient-stops))] from-green via-dark-green via-50% to-dark-green overflow-hidden`}>{children}</body>
+      <body className={`${fira_code.variable} ${archivo.variable} bg-[radial-gradient(circle_at_80%_20%,_var(--tw-gradient-stops))] from-green via-dark-green via-50% to-dark-green overflow-hidden`}>
+        <>
+          <PageDetails />
+          {children}
+        </>
+      </body>
     </html>
   )
 }

@@ -5,7 +5,6 @@ import {
   Contact,
   Footer,
   ModalContent,
-  PageDetails,
   ProfileDiamond,
   ProjectThumbnail,
   ProjectsThumbnailList,
@@ -30,8 +29,6 @@ export default function Home({ searchParams }: HomeProps) {
 
   return (
     <>
-      <PageDetails />
-
       <SideMenu menu={menu} project={project} >
         <CloseSideMenuButton />
 
