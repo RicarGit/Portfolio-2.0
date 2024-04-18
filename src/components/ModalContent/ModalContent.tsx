@@ -16,6 +16,8 @@ type ModalContentProps = {
 }
 
 export const ModalContent = ({ project }: ModalContentProps) => {
+  if (!project) return
+
   const {
     projectName,
     description,
