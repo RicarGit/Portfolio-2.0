@@ -44,13 +44,18 @@ export const ModalContent = ({ project }: ModalContentProps) => {
           {myImprovements}
         </p>
 
-
         <div className="flex flex-wrap justify-center laptop:justify-start gap-6 mt-8 tablet:ml-5">
           <Button link={codeLink} color="green">código</Button>
           <Button link={deployLink} color="orange">visitar</Button>
         </div>
 
-        <Image src={separator} width={500} height={6} alt="project description separator" className="relative tablet:absolute pt-5 pb-8 tablet:pt-0 tablet:pb-0 w-[85%] modal:w-[75%] modal:bottom-[-14px] -bottom-5 tablet:-bottom-8 left-1/2 modal:left-0 -translate-x-1/2 modal:translate-x-0" />
+        <Image
+          src={separator}
+          width={500}
+          height={6}
+          alt="project description separator"
+          className="relative tablet:absolute pt-5 pb-8 tablet:pt-0 tablet:pb-0 w-[85%] modal:w-[75%] modal:bottom-[-14px] -bottom-5 tablet:-bottom-8 left-1/2 modal:left-0 -translate-x-1/2 modal:translate-x-0"
+        />
       </div>
 
       <div className="hidden modal:flex row-span-2 justify-center items-center">

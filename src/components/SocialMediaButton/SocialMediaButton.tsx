@@ -15,7 +15,8 @@ export const SocialMediaButton = ({ src, link, alt }: MediaProps) => {
           width={30}
           src={src}
           alt={alt}
-          className="animate-rotateLeft" />
+          className="animate-rotateLeft"
+        />
       </a>
     </button>
   )

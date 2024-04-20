@@ -28,7 +28,8 @@ export const PageDetail = ({ color, rotate, position }: PageDetail) => {
         fill
         priority
         alt="page detail"
-        className="drop-shadow-[8px_8px_1px_rgba(0,0,0,.3)] animate-shadows" />
+        className="drop-shadow-[8px_8px_1px_rgba(0,0,0,.3)] animate-shadows"
+      />
     </div>
   )
 }

@@ -16,6 +16,12 @@ export const ModalDetail = ({ color, position }: ModalDetailProps) => {
   const isGreen = color === 'green'
 
   return (
-    <Image src={isGreen ? modalDetailGreen : modalDetailBlue} width={`${isGreen ? 130 : 250}`} height={`${isGreen ? 250 : 130}`} alt="modal detail" className={`absolute hidden laptop:block m-4 modal:m-8 drop-shadow-[8px_8px_1px_rgba(0,0,0,.3)] animate-shadows ${svgPositions[position]}`} />
+    <Image
+      src={isGreen ? modalDetailGreen : modalDetailBlue}
+      width={`${isGreen ? 130 : 250}`}
+      height={`${isGreen ? 250 : 130}`}
+      alt="modal detail"
+      className={`absolute hidden laptop:block m-4 modal:m-8 drop-shadow-[8px_8px_1px_rgba(0,0,0,.3)] animate-shadows ${svgPositions[position]}`}
+    />
   )
 }
