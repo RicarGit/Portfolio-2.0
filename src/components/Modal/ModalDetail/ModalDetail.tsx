@@ -1,6 +1,4 @@
 import Image from "next/image"
-import modalDetailGreen from "/public/modalDetailGreen.svg"
-import modalDetailBlue from "/public/modalDetailBlue.svg"
 
 type ModalDetailProps = {
   color: 'green' | 'blue'
@@ -17,7 +15,7 @@ export const ModalDetail = ({ color, position }: ModalDetailProps) => {
 
   return (
     <Image
-      src={isGreen ? modalDetailGreen : modalDetailBlue}
+      src={isGreen ? "/images/svg/modalDetailGreen.svg" : "/images/svg/modalDetailBlue.svg"}
       width={`${isGreen ? 130 : 250}`}
       height={`${isGreen ? 250 : 130}`}
       alt="modal detail"

@@ -69,25 +69,25 @@ export default function Home({ searchParams }: HomeProps) {
 
         <SocialMediaButtons>
           <SocialMediaButton
-            src="/github.svg"
+            src="/images/svg/github.svg"
             link="https://github.com/RicarGit"
             alt="github link"
           />
 
           <SocialMediaButton
-            src="/linkedin.svg"
+            src="/images/svg/linkedin.svg"
             link="https://www.linkedin.com/in/ricardo-gava-dev/"
             alt="linkedin link"
           />
 
           <SocialMediaButton
-            src="/discord.svg"
+            src="/images/svg/discord.svg"
             link="https://discord.gg/e5djqg63u3"
             alt="discord link"
           />
 
           <SocialMediaButton
-            src="/telegram.svg"
+            src="/images/svg/telegram.svg"
             link="https://t.me/RicardoGava"
             alt="telegram link"
           />

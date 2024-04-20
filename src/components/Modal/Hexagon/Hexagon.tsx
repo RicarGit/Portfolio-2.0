@@ -1,8 +1,8 @@
-import Image, { StaticImageData } from "next/image"
+import Image from "next/image"
 
 type HexagonProps = {
   techOrLib: string,
-  image: StaticImageData
+  image: string
 }
 
 export const Hexagon = ({ techOrLib, image }: HexagonProps) => {

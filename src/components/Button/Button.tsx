@@ -1,5 +1,4 @@
 import Image from "next/image"
-import buttonSvg from "/public/button.svg"
 import Link from "next/link"
 
 type ButtonProps = {
@@ -31,7 +30,7 @@ export const Button = ({ color, link, children }: ButtonProps) => {
         </span>
 
         <Image
-          src={buttonSvg}
+          src="/images/svg/button.svg"
           fill
           alt="bg-button"
           className={`${isOrange && 'rotate-180'} animate-[hidden_0.8s_ease_forwards]`}

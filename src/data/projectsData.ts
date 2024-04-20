@@ -1,17 +1,3 @@
-import dogsSocialMediaThumb from "/public/dogsSocialMediaThumb.jpg"
-import wildbeastThumb from "/public/wildbeastThumb.jpg"
-import galeriaFotosThumb from "/public/galeriaFotosThumb.jpg"
-import devMemoryThumb from "/public/devMemoryThumb.jpg"
-import calculadoraIMCThumb from "/public/calculadoraIMCThumb.jpg"
-import albumFotosThumb from "/public/albumFotosThumb.jpg"
-
-import dogsSocialMedia from "/public/dogsSocialMedia.png"
-import wildbeast from "/public/wildbeast.png"
-import galeriaFotos from "/public/galeriaFotos.png"
-import devMemory from "/public/devMemory.png"
-import calculadoraIMC from "/public/calculadoraIMC.png"
-import albumFotos from "/public/albumFotos.png"
-
 export const projectsData = [
   {
     projectName: 'Dogs Social Media',
@@ -21,8 +7,8 @@ export const projectsData = [
     libs: ['victory', 'zod', 'zustand', 'hook form'],
     codeLink: 'https://github.com/RicarGit/Dogs-Social-Media',
     deployLink: 'https://dogs-sunday.netlify.app',
-    thumbImage: dogsSocialMediaThumb,
-    projectImage: dogsSocialMedia
+    thumbImage: "/images/dogsSocialMediaThumb.jpg",
+    projectImage: "/images/png/dogsSocialMedia.png"
   },
   {
     projectName: 'Wildbeast',
@@ -32,8 +18,8 @@ export const projectsData = [
     libs: [''],
     codeLink: 'https://github.com/RicarGit/Grid-Wildbeast',
     deployLink: 'https://grid-wildbeasts.netlify.app',
-    thumbImage: wildbeastThumb,
-    projectImage: wildbeast
+    thumbImage: "/images/wildbeastThumb.jpg",
+    projectImage: "/images/png/wildbeast.png"
   },
   {
     projectName: 'Galeria de Fotos',
@@ -43,8 +29,8 @@ export const projectsData = [
     libs: ['styled comp.', 'jest', 'firebase'],
     codeLink: 'https://github.com/RicarGit/Gallery',
     deployLink: 'https://galeria-de-fotos-react.netlify.app',
-    thumbImage: galeriaFotosThumb,
-    projectImage: galeriaFotos
+    thumbImage: "/images/galeriaFotosThumb.jpg",
+    projectImage: "/images/png/galeriaFotos.png"
   },
   {
     projectName: 'DevMemory',
@@ -54,8 +40,8 @@ export const projectsData = [
     libs: ['styled comp.'],
     codeLink: 'https://github.com/RicarGit/React-Memory-Game',
     deployLink: 'https://project-react-memory-game.netlify.app',
-    thumbImage: devMemoryThumb,
-    projectImage: devMemory
+    thumbImage: "/images/devMemoryThumb.jpg",
+    projectImage: "/images/png/devMemory.png"
   },
   {
     projectName: 'Calculadora de IMC',
@@ -65,8 +51,8 @@ export const projectsData = [
     libs: [''],
     codeLink: 'https://github.com/RicarGit/React-Project_Imc_Calculator',
     deployLink: 'https://react-imc-calculator.netlify.app',
-    thumbImage: calculadoraIMCThumb,
-    projectImage: calculadoraIMC
+    thumbImage: "/images/calculadoraIMCThumb.jpg",
+    projectImage: "/images/png/calculadoraIMC.png"
   },
   {
     projectName: 'Álbum de Fotos',
@@ -76,7 +62,7 @@ export const projectsData = [
     libs: ['styled comp.', 'axios', 'router dom'],
     codeLink: 'https://github.com/RicarGit/React-JSONPlaceholder-Albums-Project',
     deployLink: 'https://react-jsonplaceholder-albums-project.netlify.app ',
-    thumbImage: albumFotosThumb,
-    projectImage: albumFotos
+    thumbImage: "/images/albumFotosThumb.jpg",
+    projectImage: "/images/png/albumFotos.png"
   },
 ]

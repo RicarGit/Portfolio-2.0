@@ -1,5 +1,4 @@
 import Image from "next/image"
-import separator from "/public/separator.svg"
 
 import { projectsData } from "@/data/projectsData"
 
@@ -50,7 +49,7 @@ export const ModalContent = ({ project }: ModalContentProps) => {
         </div>
 
         <Image
-          src={separator}
+          src="/images/svg/separator.svg"
           width={500}
           height={6}
           alt="project description separator"

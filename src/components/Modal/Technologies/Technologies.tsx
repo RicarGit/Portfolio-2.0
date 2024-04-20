@@ -1,6 +1,3 @@
-import hexagonGreen from "/public/hexagonGreen.svg"
-import hexagonOrange from "/public/hexagonOrange.svg"
-
 import { Hexagon } from "../Hexagon/Hexagon"
 
 type TechnologiesProps = {
@@ -14,7 +11,11 @@ export const Technologies = ({ techs, libs }: TechnologiesProps) => {
       {techs.length > 0 &&
         <div className="flex relative animate-fadeInTop">
           {techs.map(tech =>
-            <Hexagon key={tech} image={hexagonGreen} techOrLib={tech} />
+            <Hexagon
+              key={tech}
+              image="/images/svg/hexagonGreen.svg"
+              techOrLib={tech}
+            />
           )}
         </div>
       }
@@ -22,7 +23,11 @@ export const Technologies = ({ techs, libs }: TechnologiesProps) => {
       {libs.length > 0 &&
         <div className="flex relative left-9 -top-[16px] laptop:left-[50px] laptop:-top-[24px] animate-fadeInBottom">
           {libs.map(lib =>
-            <Hexagon key={lib} image={hexagonOrange} techOrLib={lib || 'no libs'} />
+            <Hexagon
+              key={lib}
+              image="/images/svg/hexagonOrange.svg"
+              techOrLib={lib || 'no libs'}
+            />
           )}
         </div>
       }

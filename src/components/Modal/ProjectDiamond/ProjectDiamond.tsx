@@ -1,8 +1,7 @@
 import Image from "next/image"
-import { StaticImageData } from "next/image"
 
 type ProjectDiamondProps = {
-  projectImage: StaticImageData
+  projectImage: string
 }
 
 export const ProjectDiamond = ({ projectImage }: ProjectDiamondProps) => {
