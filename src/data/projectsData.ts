@@ -64,5 +64,5 @@ export const projectsData = [
     deployLink: 'https://react-jsonplaceholder-albums-project.netlify.app ',
     thumbImage: "/images/albumFotosThumb.jpg",
     projectImage: "/images/png/albumFotos.png"
-  },
+  }
 ]
