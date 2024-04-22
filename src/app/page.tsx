@@ -54,7 +54,7 @@ export default function Home({ searchParams }: HomeProps) {
           </Contact>
 
           <p className="tablet:absolute mt-20 tablet:bottom-2 modal-lg:bottom-5 mb-2 tablet:mb-0 ml-4 text-dark-blue text-center text-xs tracking-wide" >
-            Todos os direitos reservados.
+            2024®Todos os direitos reservados.
           </p>
         </Footer>
       </SideMenu>
