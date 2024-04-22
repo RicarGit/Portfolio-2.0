@@ -41,9 +41,9 @@ export const ProjectThumbnail = ({ project, children }: ProjectThumbnailProps) =
 
           <Image
             src={thumbImage}
+            width={460}
+            height={110}
             style={{ height: '100%' }}
-            width={300}
-            height={100}
             priority
             alt="project thumbnail"
           />
@@ -54,5 +54,6 @@ export const ProjectThumbnail = ({ project, children }: ProjectThumbnailProps) =
           (children)
         }
       </li>
-    )))
+    ))
+  )
 }
