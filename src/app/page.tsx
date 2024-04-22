@@ -68,29 +68,7 @@ export default function Home({ searchParams }: HomeProps) {
       <main className='container relative h-dvh flex laptop:justify-end justify-center items-center'>
 
         <SocialMediaButtons>
-          <SocialMediaButton
-            src="/images/svg/github.svg"
-            link="https://github.com/RicarGit"
-            alt="github link"
-          />
-
-          <SocialMediaButton
-            src="/images/svg/linkedin.svg"
-            link="https://www.linkedin.com/in/ricardo-gava-dev/"
-            alt="linkedin link"
-          />
-
-          <SocialMediaButton
-            src="/images/svg/discord.svg"
-            link="https://discord.gg/e5djqg63u3"
-            alt="discord link"
-          />
-
-          <SocialMediaButton
-            src="/images/svg/telegram.svg"
-            link="https://t.me/RicardoGava"
-            alt="telegram link"
-          />
+          <SocialMediaButton />
         </SocialMediaButtons>
 
         <div className="flex items-center">
