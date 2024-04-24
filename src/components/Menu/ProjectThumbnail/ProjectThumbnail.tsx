@@ -16,6 +16,8 @@ export const ProjectThumbnail = ({ project, children }: ProjectThumbnailProps) =
   const [userWidth, setUserWidth] = useState(0)
 
   useEffect(() => {
+    window.addEventListener('resize', () =>
+      setUserWidth(document.documentElement.clientWidth))
     setUserWidth(document.documentElement.clientWidth)
   }, [])
 
