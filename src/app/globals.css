@@ -26,6 +26,14 @@ button a {
   font-family: var(--font-fira-code);
 }
 
+button:hover a {
+  background-size: 140% 200%;
+}
+
+button:hover .buttonDiamond {
+  background-size: 140% 200%;
+}
+
 .border-3 {
   border-width: 3px;
 }
