@@ -1,19 +1,18 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useSearchParams } from "next/navigation"
 
 import Image from "next/image"
 import Link from "next/link"
 
 import { projectsData } from "@/data/projectsData"
+import { ModalContent } from "@/components/Modal/ModalContent/ModalContent"
 
-type ProjectThumbnailProps = {
-  project: string
-  children: React.ReactNode
-}
-
-export const ProjectThumbnail = ({ project, children }: ProjectThumbnailProps) => {
+export const ProjectThumbnail = () => {
   const [userWidth, setUserWidth] = useState(0)
+  const searchParams = useSearchParams()
+  const project = searchParams.get('project')
 
   useEffect(() => {
     window.addEventListener('resize', () =>
@@ -53,7 +52,7 @@ export const ProjectThumbnail = ({ project, children }: ProjectThumbnailProps) =
 
         {project === index.toString() &&
           userWidth < 460 &&
-          (children)
+          (<ModalContent project={project} />)
         }
       </li>
     ))
