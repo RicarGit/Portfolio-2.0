@@ -1,96 +1,67 @@
+import { Suspense } from "react"
+
 import {
-  AboutMe,
-  Button,
   CloseSideMenuButton,
   Contact,
   Footer,
-  ModalContent,
+  Introduction,
+  MainButtons,
   ProfileDiamond,
   ProjectThumbnail,
   ProjectsThumbnailList,
   SideMenu,
   SideMenuModal,
-  SocialMediaButton,
   SocialMediaButtons,
-  SubTitle,
-  Title
+  SubTitle
 } from "@/components"
 
-type HomeProps = {
-  searchParams: {
-    menu: boolean
-    aboutMe: boolean
-    project: string
-  }
-}
-
-export default function Home({ searchParams }: HomeProps) {
-  const { menu, aboutMe, project } = searchParams
-
+export default function Home() {
   return (
     <>
-      <SideMenu menu={menu} project={project} >
-        <CloseSideMenuButton />
+      <Suspense>
+        <SideMenu>
+          <CloseSideMenuButton />
 
-        <SubTitle>Projetos</SubTitle>
+          <SubTitle>Projetos</SubTitle>
 
-        <nav>
-          <ProjectsThumbnailList>
-            <ProjectThumbnail project={project} >
-              <ModalContent project={project} />
-            </ProjectThumbnail>
-          </ProjectsThumbnailList>
-        </nav>
+          <nav>
+            <ProjectsThumbnailList>
+              <ProjectThumbnail />
+            </ProjectsThumbnailList>
+          </nav>
 
-        <Footer>
-          <SubTitle>Contato</SubTitle>
+          <Footer>
+            <SubTitle>Contato</SubTitle>
 
-          <Contact contactType="email" contact="ricardoagava@gmail.com" >
-            Email
-          </Contact>
+            <Contact contactType="email" contact="ricardoagava@gmail.com" >
+              Email
+            </Contact>
 
-          <Contact contactType="whatsapp" contact="(11) 97328-3296" >
-            Whatsapp
-          </Contact>
+            <Contact contactType="whatsapp" contact="(11) 97328-3296" >
+              Whatsapp
+            </Contact>
 
-          <p className="tablet:absolute mt-20 tablet:bottom-2 modal-lg:bottom-5 mb-2 tablet:mb-0 ml-4 text-dark-blue text-center text-xs tracking-wide" >
-            2024®Todos os direitos reservados.
-          </p>
-        </Footer>
-      </SideMenu>
+            <p className="tablet:absolute mt-20 tablet:bottom-2 modal-lg:bottom-5 mb-2 tablet:mb-0 ml-4 text-dark-blue text-center text-xs tracking-wide" >
+              2024®Todos os direitos reservados.
+            </p>
+          </Footer>
+        </SideMenu>
 
-      {project &&
-        <SideMenuModal>
-          <ModalContent project={project} />
-        </SideMenuModal>
-      }
+        <SideMenuModal />
+      </Suspense>
 
       <main className='container relative h-dvh flex laptop:justify-end justify-center items-center'>
-
-        <SocialMediaButtons>
-          <SocialMediaButton />
-        </SocialMediaButtons>
+        <SocialMediaButtons />
 
         <div className="flex items-center">
           <div className="relative text-white desktop:mr-0 laptop:mr-6">
-            <p className="desktop:text-xl font-medium ml-10 tablet:ml-0 tablet:text-left tracking-wide tablet:tracking-wider desktop:tracking-widest">Olá!👋 Meu nome é <span className="inline-block w-[44%] tablet:w-[36%] font-extrabold text-left bg-gradient-to-r from-orange to-transparent rounded desktop:py-0.5 pl-2 animate-widthAnimation">Ricardo.</span></p>
+            <p className="desktop:text-xl font-medium ml-10 tablet:ml-0 tablet:text-left tracking-wide tablet:tracking-wider desktop:tracking-widest">Olá!👋 Meu nome é <span className="inline-block w-[44%] tablet:w-[36%] font-extrabold text-left bg-gradient-to-r from-orange to-transparent rounded desktop:py-0.5 pl-2 animate-widthAnimation">Ricardo.</span>
+            </p>
 
-            {aboutMe
-              ? <AboutMe />
-              : <Title />
-            }
-
-            <div className="flex justify-center tablet:justify-normal desktop:gap-10 gap-6 desktop:mt-24 mt-16">
-              <Button
-                link={`${menu ? 'home' : 'menu'}`}
-                color="green">{menu ? 'close' : 'menu'}
-              </Button>
-
-              <Button
-                link={`${aboutMe ? 'home' : 'aboutMe'}`}
-                color="orange">{aboutMe ? 'home' : 'sobre'}
-              </Button>
-            </div>
+            <Suspense>
+              <Introduction />
+              <MainButtons />
+            </Suspense>
           </div>
 
           <ProfileDiamond />
