@@ -1,5 +1,4 @@
 import Image from "next/image"
-
 import { projectsData } from "@/data/projectsData"
 
 import {
@@ -15,8 +14,6 @@ type ModalContentProps = {
 }
 
 export const ModalContent = ({ project }: ModalContentProps) => {
-  if (!project) return
-
   const {
     projectName,
     description,

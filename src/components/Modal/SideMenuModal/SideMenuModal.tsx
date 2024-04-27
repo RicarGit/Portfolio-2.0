@@ -1,14 +1,15 @@
 "use client"
 
-import { MouseEvent, ReactNode } from "react"
-import { useRouter } from "next/navigation"
+import { MouseEvent } from "react"
+import { useRouter, useSearchParams } from "next/navigation"
+import { ModalContent } from "../ModalContent/ModalContent"
 
-type MenuModaLProps = {
-  children: ReactNode
-}
-
-export const SideMenuModal = ({ children }: MenuModaLProps) => {
+export const SideMenuModal = () => {
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const project = searchParams.get('project')
+
+  if (!project) return
 
   const closeModal = (event: MouseEvent<HTMLDivElement>) => {
     // @ts-ignore
@@ -19,7 +20,7 @@ export const SideMenuModal = ({ children }: MenuModaLProps) => {
 
   return (
     <div onClick={closeModal} id="modal" className="hidden absolute w-dvw h-dvh tablet:flex items-center z-20 backdrop-blur-sm">
-      {children}
+      <ModalContent project={project} />
     </div>
   )
 }
