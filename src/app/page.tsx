@@ -1,52 +1,19 @@
 import { Suspense } from "react"
 
 import {
-  CloseSideMenuButton,
-  Contact,
-  Footer,
   Introduction,
   MainButtons,
   ProfileDiamond,
-  ProjectThumbnail,
-  ProjectsThumbnailList,
   SideMenu,
   SideMenuModal,
-  SocialMediaButtons,
-  SubTitle
+  SocialMediaButtons
 } from "@/components"
 
 export default function Home() {
   return (
     <>
       <Suspense>
-        <SideMenu>
-          <CloseSideMenuButton />
-
-          <SubTitle>Projetos</SubTitle>
-
-          <nav>
-            <ProjectsThumbnailList>
-              <ProjectThumbnail />
-            </ProjectsThumbnailList>
-          </nav>
-
-          <Footer>
-            <SubTitle>Contato</SubTitle>
-
-            <Contact contactType="email" contact="ricardoagava@gmail.com" >
-              Email
-            </Contact>
-
-            <Contact contactType="whatsapp" contact="(11) 97328-3296" >
-              Whatsapp
-            </Contact>
-
-            <p className="tablet:absolute mt-20 tablet:bottom-2 modal-lg:bottom-5 mb-2 tablet:mb-0 ml-4 text-dark-blue text-center text-xs tracking-wide" >
-              2024®Todos os direitos reservados.
-            </p>
-          </Footer>
-        </SideMenu>
-
+        <SideMenu />
         <SideMenuModal />
       </Suspense>
 
