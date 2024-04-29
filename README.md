@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfólio 2.0
 
-## Getting Started
+Este é o meu portfólio 2.0, desenvolvido com Next.js 14 e estilizado com Tailwind CSS. O portfólio em sua versão desktop possui todo o conteúdo em uma única tela, sem barras de rolagem, e inclui um menu lateral que exibe meus projetos em um modal quando clicados.
 
-First, run the development server:
+## Instalação
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    Certifique-se de ter o Node.js versão v18.17+ instalado em seu sistema.
+    Clone este repositório:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> git clone https://github.com/RicarGit/Portfolio-2.0.git
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    Navegue até o diretório do projeto:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+> cd pasta-contendo-o-projeto
 
-## Learn More
+    Instale as dependências:
 
-To learn more about Next.js, take a look at the following resources:
+> npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Como executar
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Execute o seguinte comando para iniciar o servidor de desenvolvimento:
 
-## Deploy on Vercel
+> npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O aplicativo será executado em http://localhost:3000.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Tecnologias Utilizadas
+
+    Next.js 14
+    Tailwind CSS
+
+## Estrutura do Projeto
+  ![Estrutura de Pastas](/public/images/estrutura_de_pastas.jpg)
+
+### Sinta-se à vontade para contribuir com sugestões, relatórios de problemas ou solicitações de recursos.
+
+Este projeto está licenciado sob a Licença MIT.
