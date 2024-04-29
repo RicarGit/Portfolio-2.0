@@ -5,11 +5,9 @@ import { useSearchParams } from "next/navigation"
 import {
   CloseSideMenuButton,
   Footer,
-  ProjectThumbnail,
   ProjectsThumbnailList,
   SubTitle
 } from "@/components"
-
 
 export const SideMenu = () => {
   const searchParams = useSearchParams()
@@ -23,9 +21,7 @@ export const SideMenu = () => {
       <SubTitle>Projetos</SubTitle>
 
       <nav>
-        <ProjectsThumbnailList>
-          <ProjectThumbnail />
-        </ProjectsThumbnailList>
+        <ProjectsThumbnailList />
       </nav>
 
       <Footer />
